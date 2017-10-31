@@ -1,0 +1,123 @@
+.leadership {
+	transform: skewY(2.5deg);
+	padding-bottom: 6rem;
+	background-color: $member-bg;
+	position: relative;
+	z-index: 3;
+	.container {
+		transform: skewY(-2.5deg);
+	}
+	&__leadership-container {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		list-style: none;
+	}
+	&__title {
+		margin: 7rem 0;
+	}
+	&__persone {
+		padding: 0 1.5rem;
+		margin-bottom: 2.5rem;
+		width: 25%;
+		height: 34.8rem;
+		box-shadow: 0 18px 100px -35px rgba(0, 0, 0, 0.75);
+		position: relative;
+		overflow: hidden;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:nth-child(4n+4) {
+			padding-right: 0;
+		}
+		&:nth-child(5n+5) {
+			padding-left: 0;
+		}
+	}
+	&__wrapper {
+		height: 100%;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		&:hover {
+			.leadership__main-info {
+				transform: translateX(-100%);
+			}
+			.leadership__description {
+				transform: translateX(0);
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background: url(../images/dots.png);
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+	}
+	&__main-info {
+		transition: transform 0.3s ease-in;
+	}
+	&__description {
+		height: 100%;
+		padding: 2.5rem 2.5rem 0 2.5rem;
+		position: absolute;
+		top: 0;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+	&__about {
+		font-size: 1.6rem;
+		text-align: left;
+		color: $white-80;
+		height: calc(100% - 6rem);
+		overflow: auto;
+	}
+	&__social {
+		position: absolute;
+		font-size: 1.8rem;
+		color: $white-40;
+		bottom: 2rem;
+		right: 2rem;
+	}
+	&__avatar {
+		margin: 4.5rem auto 0 auto;
+	}
+	&__name {
+		font-size: 2rem;
+		color: $white;
+		margin-bottom: 0;
+	}
+	&__position {
+		font-size: 1.6rem;
+		color: $white-40;
+		margin-bottom: 0;
+	}
+}
+
+/* Background */
+
+.egorov {
+	background-image: url(../images/ae.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Avatar team */
+
+.leadership__avatar {
+	&.egorov-avatar {
+		width: $ae_avatar_width;
+		height: $ae_avatar_height;
+	}
+}
+
+.egorov-avatar {
+	background-image: url($ae_avatar_image);
+	background-position: $ae_avatar_offset_x $ae_avatar_offset_y;
+}

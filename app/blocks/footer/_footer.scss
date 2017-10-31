@@ -1,0 +1,27 @@
+.footer {
+	background-color: $dark-indigo-three;
+	padding: 3.5rem 0 3rem 0;
+	&__navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		list-style: none;
+		margin-bottom: 6rem;
+	}
+	&__navigation-item {
+		a {
+			font-size: 1.7rem;
+			padding: 0 2rem;
+			color: $dark;
+		}
+	}
+	.social__social-item a {
+		font-size: 5rem;
+		color: $dark;
+	}
+	&__copyright {
+		font-size: 1.2rem;
+		text-align: center;
+		color: $dark;
+	}
+}

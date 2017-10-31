@@ -1,0 +1,59 @@
+// *****************************************************************************
+// Fonts
+// *****************************************************************************
+
+$base-font: 'Helvetica Neue', Arial, sans-serif;
+$main-font: 'ProximaNova', $base-font;
+$icon-font: 'BitRewards';
+
+// *****************************************************************************
+// Colors
+// *****************************************************************************
+
+$dusty-orange: #f2793f;
+$pastel-orange: #ffa04a;
+$cloudy-blue: #bdc2cf;
+$dark-indigo: #0e1c3f;
+$white: #ffffff;
+$white-60: rgba(255, 255, 255, 0.6);
+$pastel-orange-two: #ff9a49;
+$pinkish-orange: #ff764a;
+$coral: #ff5743;
+$dusty-orange-35: rgba(242, 121, 63, 0.35);
+$white-20: rgba(255, 255, 255, 0.2);
+$orangish: #fa744b;
+$bluey-grey: #a7adbc;
+$white-80: rgba(255, 255, 255, 0.8);
+$white-40: rgba(255, 255, 255, 0.4);
+$dusky-blue: #5357ad;
+$white-50: rgba(255, 255, 255, 0.5);
+$dusty-orange-50: rgba(242, 121, 63, 0.5);
+$yellow-tan: #ffd870;
+$twilight: #4a5c89;
+$twilight-0: #172443;
+$dark-slate-blue: #14295b;
+$dark-indigo-two: #0d1939;
+$dark-blue-grey: #1a2849;
+$dark-blue-tree: #15295a;
+$dark-slate-blue-two: #182f69;
+$cloudy-blue-50: rgba(189, 194, 207, 0.5);
+$dark-slate-blue-three: #142552;
+$member-bg: #10204a;
+$triagle-bg: #152241;
+$midnight: #030b21;
+$dark-slate-blue-four: #223a74;
+$dark-blue-grey-two: #101b3b;
+$dark: #2e364b;
+$dark-indigo-three: #09132c;
+
+// *****************************************************************************
+// Media
+// *****************************************************************************
+
+$mobile: 414px;
+$mobile-down: mobile - 1;
+$tablet: 768px;
+$tablet-down: tablet - 1;
+$tablet-up: 992px;
+$hd: 1921px;
+$hd-down: hd - 1;

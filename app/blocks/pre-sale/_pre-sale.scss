@@ -1,0 +1,72 @@
+.pre-sale {
+	position: relative;
+	padding: 15rem 0;
+	z-index: 2;
+	&__rectangle {
+		background-image: linear-gradient(to bottom, $dark-blue-grey, $dark-indigo-two);
+		height: 110%;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: -10%;
+	}
+	h2 {
+		margin-bottom: 5rem;
+	}
+	&__desk {
+		text-align: center;
+		font-size: 3.2rem;
+		font-weight: 300;
+		color: $white;
+		margin: 4rem 0;
+	}
+	.button {
+		margin: 0 auto;
+	}
+}
+
+.table-step {
+	background-color: $dark-slate-blue;
+	padding: 0 10%;
+	&__list {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		flex-grow: 1;
+		display: flex;
+		width: 100%;
+		align-items: center;
+		border-bottom: 1px solid $white-50;
+		p,
+		h4 {
+			width: 50%;
+			margin: 0;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
+		p {
+			text-align: right;
+			padding-right: 1.5rem;
+			color: $bluey-grey;
+			letter-spacing: 0.025em;
+		}
+		h4 {
+			padding-left: 1.5rem;
+			letter-spacing: 0.025em;
+			color: $white;
+			font-size: 1.8rem;
+		}
+	}
+	&__table-desk {
+		font-size: 2.6rem;
+		font-weight: 300;
+		letter-spacing: 0.025em;
+		text-align: center;
+		color: $white;
+		margin-bottom: 0;
+		padding-top: 2.5rem;
+		padding-bottom: 5rem;
+	}
+}

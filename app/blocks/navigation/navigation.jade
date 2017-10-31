@@ -1,0 +1,35 @@
+mixin navigation()
+	+b.navigation
+		.container
+			.row
+				.col-md-3
+					+e.logo
+						img(src="../images/logo-color.svg" alt="logo")
+				.col-md-7.menu-wrapper
+					+e.menu
+						+e.nav-list.UL
+							+e.nav-item.LI
+								a(href="#") How it work
+							+e.nav-item.LI
+								a(href="#") Great Value
+							+e.nav-item.LI
+								a(href="#") Benefits
+							+e.nav-item.LI
+								a(href="#") Tokens Offering
+							+e.nav-item.LI
+								a(href="#") Team
+							+e.nav-item.LI
+								a(href="#") Advisers
+							+e.nav-item.LI
+								a(href="#") Roadmap
+							+e.nav-item.LI
+								a(href="#") Blog
+						+e.language
+							+e.language-active.P en
+							+e.UL.language-list
+								+e.LI.language-item EN
+								+e.LI.language-item CN
+								+e.LI.language-item RU
+				.col-md-2
+					button.button.button-nav WHITEPAPER
+						span

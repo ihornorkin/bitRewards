@@ -1,0 +1,26 @@
+include ../navigation/navigation
+
+mixin header()
+
+	+b.HEADER.header
+		.corner
+			img(src="../images/corner.png" alt="Corner")
+		+navigation
+		.container
+			.row
+				.col-md-8.col-md-offset-2
+					h1.text-center Blockchain rewards and loyalty platform
+					+e.P.description.text-center Shoppers are rewarded for purchases with cryptocurrency instead of loyalty points.
+					button.button.header-button Stay Tuned!
+						span
+					+b.social.UL
+						+e.LI.social-item
+							a(class="icon-telegram" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-bitcoin" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-facebook" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-twitter" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-linkedin" href="#" target="_blank")

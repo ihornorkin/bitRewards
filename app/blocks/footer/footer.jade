@@ -1,0 +1,29 @@
+mixin footer()
+	+b.FOOTER.footer
+		.container
+			.row
+				.col-md-6.col-md-offset-3
+					+e.UL.navigation
+						+e.LI.navigation-item
+							a(href="#") Home
+						+e.LI.navigation-item
+							a(href="#") Privacy
+						+e.LI.navigation-item
+							a(href="#") Terms & Conditions
+						+e.LI.navigation-item
+							a(href="#") About Us
+						+e.LI.navigation-item
+							a(href="#") Contact Us
+					+b.social.UL
+						+e.LI.social-item
+							a(class="icon-telegram" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-bitcoin" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-facebook" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-twitter" href="#" target="_blank")
+						+e.LI.social-item
+							a(class="icon-linkedin" href="#" target="_blank")
+					+e.copyright © 2017 BitRewards – Blockchain Rewards And Loyalty Platform
+

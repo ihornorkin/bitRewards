@@ -1,0 +1,39 @@
+.value {
+	background-image: url(../images/value-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	padding-bottom: 15rem;
+	z-index: 4;
+	&__rect {
+		position: absolute;
+		height: 5rem;
+		width: 100%;
+		top: -5rem;
+		left: 0;
+		background-color: $dark-slate-blue-two;
+	}
+	h2 {
+		padding: 15rem 0 6rem 0;
+	}
+	&__text {
+		p {
+			font-size: 2rem;
+			font-weight: 300;
+			color: $white;
+			margin-bottom: 3rem;
+		}
+		blockquote {
+			margin-top: 1rem;
+			font-size: 3.2rem;
+			font-weight: 300;
+			color: $white;
+			padding: 0 1rem 0 1.5rem;
+			border-color: $orangish;
+			strong {
+				font-weight: 600;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.subscribe {
+	h2 {
+		margin: 7rem 0;
+	}
+}
+
+.form {
+	&__desk {
+		font-size: 3.2rem;
+		font-weight: 300;
+		text-align: center;
+		color: $white-60;
+		margin-bottom: 5.5rem;
+	}
+	&__field {
+		background-color: $dark-blue-grey-two;
+		font-size: 1.5rem;
+		text-align: center;
+		color: $white-50;
+	}
+	&__field-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__field {
+		height: 5.6rem;
+		border-radius: 2.8rem;
+		width: 39rem;
+		background-color: $dark-blue-grey-two;
+		border: solid 1px $dusty-orange;
+		position: relative;
+		right: -6rem;
+		z-index: 3;
+	}
+	.button {
+		padding: 1.7rem 4rem 1.7rem 9rem;
+	}
+}

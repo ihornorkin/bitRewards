@@ -1,0 +1,5 @@
+//@include font-face( font, file, weight);
+
+@include font-face(ProximaNova, "../fonts/ProximaNova-Regular", normal);
+@include font-face(ProximaNova, "../fonts/ProximaNova-Light", 300);
+@include font-face(ProximaNova, "../fonts/ProximaNova-Semibold", 600);

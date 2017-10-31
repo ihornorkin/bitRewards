@@ -1,0 +1,32 @@
+include /blocks/head/head
+include /blocks/body/body
+include /blocks/scripts/scripts
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/scheme/scheme
+include /blocks/how-work/how-work
+include /blocks/value/value
+include /blocks/benefits/benefits
+include /blocks/pre-sale/pre-sale
+include /blocks/team/team
+include /blocks/roadmap/roadmap
+
+block head
+	- var pageTitle = 'BitRewards';
+
+doctype html
+html(lang='ru')
+	+head
+	+body
+		+header
+		+scheme
+		+how-work
+		+value
+		+benefits
+		+pre-sale
+		+team
+		+roadmap
+		+footer
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+		+scripts(['app.min.js'])

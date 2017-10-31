@@ -1,0 +1,57 @@
+.other-member-section {
+	background-color: $dark-slate-blue-three;
+}
+
+.other-member {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	h2 {
+		margin: 4rem 0;
+	}
+	&__item {
+		width: 33.33333%;
+		display: flex;
+		margin-bottom: 5.5rem;
+	}
+	&__avatar {
+		width: 12.6rem;
+		height: 12.6rem;
+		position: relative;
+		background-image: url($slava_zytsar_image);
+		margin-right: 3rem;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-image: url(../images/dots.png);
+			height: 100%;
+			width: 100%;
+			opacity: 0.4;
+		}
+	}
+	&__about {
+		position: relative;
+	}
+	&__name {
+		font-size: 2rem;
+		color: $white;
+	}
+	&__position {
+		font-size: 1.6rem;
+		color: $white-40;
+	}
+	&__social {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0.3;
+		font-size: 1.8rem;
+		color: $white;
+	}
+}
+
+.zytsar {
+	background-position: $slava_zytsar_offset_x $slava_zytsar_offset_y;
+}

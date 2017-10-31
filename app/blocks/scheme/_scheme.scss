@@ -1,0 +1,38 @@
+.scheme {
+	background-color: $dark-blue-tree;
+	position: relative;
+	padding-bottom: 4.5rem;
+	.rectangle {
+		background-color: $dark-blue-tree;
+		transform: skewY(1.5deg);
+		width: 100%;
+		height: 4rem;
+		left: 0;
+		top: 0;
+		position: absolute;
+	}
+	&__steps {
+		margin-bottom: 7rem;
+		display: flex;
+		.scheme__animation {
+			margin-left: auto;
+			display: block;
+			width: 54rem;
+		}
+	}
+	&__steps.steps-reverse {
+		flex-direction: row-reverse;
+		.scheme__animation {
+			margin-right: auto;
+			margin-left: 0;
+		}
+	}
+	&__about {
+		color: $white-60;
+		font-size: 1.8rem;
+		margin-bottom: 3rem;
+	}
+	&__title {
+		margin-bottom: 2rem;
+	}
+}

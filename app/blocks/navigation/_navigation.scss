@@ -1,0 +1,67 @@
+.navigation {
+	padding: 1rem 0 0 0;
+	&__menu {
+		display: flex;
+		align-items: center;
+		margin-top: 1.3rem;
+	}
+	&__nav-list {
+		display: flex;
+		list-style: none;
+		margin-bottom: 0;
+		position: relative;
+		left: -2rem;
+	}
+	&__nav-item {
+		padding: 0 1.2rem;
+		a {
+			color: $cloudy-blue;
+			font-size: 1.4rem;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+	&__language {
+		flex-grow: 1;
+		text-align: center;
+		position: relative;
+	}
+	&__language-active {
+		font-size: 1.3rem;
+		color: $cloudy-blue;
+		transition: color 0.4s;
+		cursor: pointer;
+		text-transform: uppercase;
+		margin-bottom: 0;
+		margin-top: 0.5rem;
+		padding-right: 0.8rem;
+		display: inline-block;
+		&:hover {
+			color: $pastel-orange;
+		}
+	}
+	&__language-list {
+		list-style: none;
+		background-color: $dark-indigo;
+		border-radius: 1.4rem;
+		padding: 2.8rem 2.8rem 2.2rem 2.8rem;
+		margin-bottom: 0;
+		position: absolute;
+		top: 4.8rem;
+		left: -0.8rem;
+	}
+	&__language-item {
+		color: $cloudy-blue;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-bottom: 0.6rem;
+	}
+	&__logo {
+		width: 22rem;
+	}
+}

@@ -1,0 +1,51 @@
+include ../subscribe/subscribe
+
+mixin roadmap()
+	+b.SECTION.roadmap
+		.container
+			.row
+				.col-md-12
+					h2.text-center Project roadmap
+						strong .
+				.col-md-12
+					+e.slider-wrapper
+						+b.road-map-slider(id="roadmap")
+							+e.item(data-start="january 2017" data-end="February 2017")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 1
+									+e.P.date january - February, 2017
+									+e.P.text Development of points based loyalty system GIFTD designed to reward shoppers.
+							+e.item(data-start="February 2017" data-end="december 2017")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 2
+									+e.P.date February - December, 2017
+									+e.P.text Structuring the concept of using Ethereum blockchain with loyalty and rewards tools and customer development of the crypto-rewards for e-commerce industry, team hiring.
+							+e.item(data-start="January 2018" data-end="may 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 3
+									+e.P.date January - May, 2018
+									+e.P.text A fully-functioning rewards and loyalty system for online merchants allowing to give BRW tokens as rewards and users’ dashboard with cryptowallet.
+							+e.item(data-start="March 2018" data-end="June 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 4
+									+e.P.date November - February, 2018
+									+e.P.text Merchant’s cryptowallet and Liquidity Smart Contract.
+							+e.item(data-start="June 2018" data-end="July 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 5
+									+e.P.date June - July, 2018
+									+e.P.text Integration of Bitrewards.Network with Lightning Network and Raiden Network.
+					+e.slide-nav
+						.icon-left
+						.icon-right
+				+subscribe

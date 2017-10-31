@@ -1,0 +1,20 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/fonts';
+@import 'helpers/bitRewards';
+@import 'helpers/optimize';
+@import 'helpers/sprites/sprite';
+@import '../../node_modules/slick-carousel/**/*.scss';
+
+/* Example scss import modules */
+//@import '../../node_modules/slick-carousel/**/*.scss';
+
+/* Bootsrap styles */
+@import '../../node_modules/bootstrap/dist/css/bootstrap';
+
+@import 'helpers/base';
+@import 'helpers/buttons';
+
+/* Blocks import using node-sass-magic-importer for import */
+/* https://www.npmjs.com/package/node-sass-magic-importer */
+@import '../blocks/**/*.scss';

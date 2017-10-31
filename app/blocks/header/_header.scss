@@ -1,0 +1,55 @@
+header {
+	background-image: url(../images/header-bg.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 18rem;
+	h1 {
+		margin: 13.2rem auto 2.8rem auto;
+	}
+	.corner {
+		position: absolute;
+		bottom: -4.5rem;
+		left: 0;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.header {
+	&__description {
+		font-size: 2.8rem;
+		font-weight: 300;
+		line-height: 1.71;
+		letter-spacing: 0.025em;
+		color: $white;
+	}
+}
+
+.header-button {
+	display: block;
+	padding: 1.7rem 7rem;
+	margin: 3.7rem auto 20.5rem auto;
+}
+
+.social {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	&__social-item {
+		padding: 0 2.2rem;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		a {
+			font-size: 5.5rem;
+			color: $white;
+		}
+	}
+}

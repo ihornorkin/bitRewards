@@ -1,0 +1,7 @@
+.team {
+	position: relative;
+	z-index: 1;
+	&__reverse {
+		transform: skewY(1.5deg);
+	}
+}

@@ -1,0 +1,460 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$ae_avatar_name: 'ae-avatar';
+$ae_avatar_x: 612px;
+$ae_avatar_y: 0px;
+$ae_avatar_offset_x: -612px;
+$ae_avatar_offset_y: 0px;
+$ae_avatar_width: 145px;
+$ae_avatar_height: 178px;
+$ae_avatar_total_width: 800px;
+$ae_avatar_total_height: 695px;
+$ae_avatar_image: '../images/sprites/sprite.png';
+$ae_avatar: (612px, 0px, -612px, 0px, 145px, 178px, 800px, 695px, '../images/sprites/sprite.png', 'ae-avatar', );
+$ag_name: 'ag';
+$ag_x: 306px;
+$ag_y: 0px;
+$ag_offset_x: -306px;
+$ag_offset_y: 0px;
+$ag_width: 146px;
+$ag_height: 178px;
+$ag_total_width: 800px;
+$ag_total_height: 695px;
+$ag_image: '../images/sprites/sprite.png';
+$ag: (306px, 0px, -306px, 0px, 146px, 178px, 800px, 695px, '../images/sprites/sprite.png', 'ag', );
+$ak_avatar_name: 'ak-avatar';
+$ak_avatar_x: 0px;
+$ak_avatar_y: 197px;
+$ak_avatar_offset_x: 0px;
+$ak_avatar_offset_y: -197px;
+$ak_avatar_width: 145px;
+$ak_avatar_height: 179px;
+$ak_avatar_total_width: 800px;
+$ak_avatar_total_height: 695px;
+$ak_avatar_image: '../images/sprites/sprite.png';
+$ak_avatar: (0px, 197px, 0px, -197px, 145px, 179px, 800px, 695px, '../images/sprites/sprite.png', 'ak-avatar', );
+$ak_name: 'ak';
+$ak_x: 152px;
+$ak_y: 0px;
+$ak_offset_x: -152px;
+$ak_offset_y: 0px;
+$ak_width: 146px;
+$ak_height: 180px;
+$ak_total_width: 800px;
+$ak_total_height: 695px;
+$ak_image: '../images/sprites/sprite.png';
+$ak: (152px, 0px, -152px, 0px, 146px, 180px, 800px, 695px, '../images/sprites/sprite.png', 'ak', );
+$an_name: 'an';
+$an_x: 0px;
+$an_y: 0px;
+$an_offset_x: 0px;
+$an_offset_y: 0px;
+$an_width: 144px;
+$an_height: 189px;
+$an_total_width: 800px;
+$an_total_height: 695px;
+$an_image: '../images/sprites/sprite.png';
+$an: (0px, 0px, 0px, 0px, 144px, 189px, 800px, 695px, '../images/sprites/sprite.png', 'an', );
+$bancor_name: 'bancor';
+$bancor_x: 268px;
+$bancor_y: 569px;
+$bancor_offset_x: -268px;
+$bancor_offset_y: -569px;
+$bancor_width: 192px;
+$bancor_height: 48px;
+$bancor_total_width: 800px;
+$bancor_total_height: 695px;
+$bancor_image: '../images/sprites/sprite.png';
+$bancor: (268px, 569px, -268px, -569px, 192px, 48px, 800px, 695px, '../images/sprites/sprite.png', 'bancor', );
+$bitrix_name: 'bitrix';
+$bitrix_x: 332px;
+$bitrix_y: 625px;
+$bitrix_offset_x: -332px;
+$bitrix_offset_y: -625px;
+$bitrix_width: 54px;
+$bitrix_height: 54px;
+$bitrix_total_width: 800px;
+$bitrix_total_height: 695px;
+$bitrix_image: '../images/sprites/sprite.png';
+$bitrix: (332px, 625px, -332px, -625px, 54px, 54px, 800px, 695px, '../images/sprites/sprite.png', 'bitrix', );
+$ds_avatar_name: 'ds-avatar';
+$ds_avatar_x: 460px;
+$ds_avatar_y: 0px;
+$ds_avatar_offset_x: -460px;
+$ds_avatar_offset_y: 0px;
+$ds_avatar_width: 144px;
+$ds_avatar_height: 180px;
+$ds_avatar_total_width: 800px;
+$ds_avatar_total_height: 695px;
+$ds_avatar_image: '../images/sprites/sprite.png';
+$ds_avatar: (460px, 0px, -460px, 0px, 144px, 180px, 800px, 695px, '../images/sprites/sprite.png', 'ds-avatar', );
+$edinin_name: 'edinin';
+$edinin_x: 0px;
+$edinin_y: 569px;
+$edinin_offset_x: 0px;
+$edinin_offset_y: -569px;
+$edinin_width: 126px;
+$edinin_height: 126px;
+$edinin_total_width: 800px;
+$edinin_total_height: 695px;
+$edinin_image: '../images/sprites/sprite.png';
+$edinin: (0px, 569px, 0px, -569px, 126px, 126px, 800px, 695px, '../images/sprites/sprite.png', 'edinin', );
+$gizi_name: 'gizi';
+$gizi_x: 422px;
+$gizi_y: 384px;
+$gizi_offset_x: -422px;
+$gizi_offset_y: -384px;
+$gizi_width: 126px;
+$gizi_height: 126px;
+$gizi_total_width: 800px;
+$gizi_total_height: 695px;
+$gizi_image: '../images/sprites/sprite.png';
+$gizi: (422px, 384px, -422px, -384px, 126px, 126px, 800px, 695px, '../images/sprites/sprite.png', 'gizi', );
+$google_analytics_name: 'google-analytics';
+$google_analytics_x: 660px;
+$google_analytics_y: 569px;
+$google_analytics_offset_x: -660px;
+$google_analytics_offset_y: -569px;
+$google_analytics_width: 44px;
+$google_analytics_height: 44px;
+$google_analytics_total_width: 800px;
+$google_analytics_total_height: 695px;
+$google_analytics_image: '../images/sprites/sprite.png';
+$google_analytics: (660px, 569px, -660px, -569px, 44px, 44px, 800px, 695px, '../images/sprites/sprite.png', 'google-analytics', );
+$ia_name: 'ia';
+$ia_x: 0px;
+$ia_y: 384px;
+$ia_offset_x: 0px;
+$ia_offset_y: -384px;
+$ia_width: 146px;
+$ia_height: 177px;
+$ia_total_width: 800px;
+$ia_total_height: 695px;
+$ia_image: '../images/sprites/sprite.png';
+$ia: (0px, 384px, 0px, -384px, 146px, 177px, 800px, 695px, '../images/sprites/sprite.png', 'ia', );
+$insales_name: 'insales';
+$insales_x: 765px;
+$insales_y: 0px;
+$insales_offset_x: -765px;
+$insales_offset_y: 0px;
+$insales_width: 35px;
+$insales_height: 56px;
+$insales_total_width: 800px;
+$insales_total_height: 695px;
+$insales_image: '../images/sprites/sprite.png';
+$insales: (765px, 0px, -765px, 0px, 35px, 56px, 800px, 695px, '../images/sprites/sprite.png', 'insales', );
+$jm_name: 'jm';
+$jm_x: 153px;
+$jm_y: 197px;
+$jm_offset_x: -153px;
+$jm_offset_y: -197px;
+$jm_width: 146px;
+$jm_height: 177px;
+$jm_total_width: 800px;
+$jm_total_height: 695px;
+$jm_image: '../images/sprites/sprite.png';
+$jm: (153px, 197px, -153px, -197px, 146px, 177px, 800px, 695px, '../images/sprites/sprite.png', 'jm', );
+$joomla_name: 'joomla';
+$joomla_x: 765px;
+$joomla_y: 64px;
+$joomla_offset_x: -765px;
+$joomla_offset_y: -64px;
+$joomla_width: 34px;
+$joomla_height: 34px;
+$joomla_total_width: 800px;
+$joomla_total_height: 695px;
+$joomla_image: '../images/sprites/sprite.png';
+$joomla: (765px, 64px, -765px, -64px, 34px, 34px, 800px, 695px, '../images/sprites/sprite.png', 'joomla', );
+$kulitskiy_name: 'kulitskiy';
+$kulitskiy_x: 154px;
+$kulitskiy_y: 384px;
+$kulitskiy_offset_x: -154px;
+$kulitskiy_offset_y: -384px;
+$kulitskiy_width: 126px;
+$kulitskiy_height: 127px;
+$kulitskiy_total_width: 800px;
+$kulitskiy_total_height: 695px;
+$kulitskiy_image: '../images/sprites/sprite.png';
+$kulitskiy: (154px, 384px, -154px, -384px, 126px, 127px, 800px, 695px, '../images/sprites/sprite.png', 'kulitskiy', );
+$kurkin_name: 'kurkin';
+$kurkin_x: 134px;
+$kurkin_y: 569px;
+$kurkin_offset_x: -134px;
+$kurkin_offset_y: -569px;
+$kurkin_width: 126px;
+$kurkin_height: 126px;
+$kurkin_total_width: 800px;
+$kurkin_total_height: 695px;
+$kurkin_image: '../images/sprites/sprite.png';
+$kurkin: (134px, 569px, -134px, -569px, 126px, 126px, 800px, 695px, '../images/sprites/sprite.png', 'kurkin', );
+$litkevich_name: 'litkevich';
+$litkevich_x: 288px;
+$litkevich_y: 384px;
+$litkevich_offset_x: -288px;
+$litkevich_offset_y: -384px;
+$litkevich_width: 126px;
+$litkevich_height: 127px;
+$litkevich_total_width: 800px;
+$litkevich_total_height: 695px;
+$litkevich_image: '../images/sprites/sprite.png';
+$litkevich: (288px, 384px, -288px, -384px, 126px, 127px, 800px, 695px, '../images/sprites/sprite.png', 'litkevich', );
+$ma_avatar_name: 'ma-avatar';
+$ma_avatar_x: 612px;
+$ma_avatar_y: 186px;
+$ma_avatar_offset_x: -612px;
+$ma_avatar_offset_y: -186px;
+$ma_avatar_width: 144px;
+$ma_avatar_height: 178px;
+$ma_avatar_total_width: 800px;
+$ma_avatar_total_height: 695px;
+$ma_avatar_image: '../images/sprites/sprite.png';
+$ma_avatar: (612px, 186px, -612px, -186px, 144px, 178px, 800px, 695px, '../images/sprites/sprite.png', 'ma-avatar', );
+$magento_name: 'magento';
+$magento_x: 556px;
+$magento_y: 448px;
+$magento_offset_x: -556px;
+$magento_offset_y: -448px;
+$magento_width: 48px;
+$magento_height: 56px;
+$magento_total_width: 800px;
+$magento_total_height: 695px;
+$magento_image: '../images/sprites/sprite.png';
+$magento: (556px, 448px, -556px, -448px, 48px, 56px, 800px, 695px, '../images/sprites/sprite.png', 'magento', );
+$mailchimp_name: 'mailchimp';
+$mailchimp_x: 394px;
+$mailchimp_y: 625px;
+$mailchimp_offset_x: -394px;
+$mailchimp_offset_y: -625px;
+$mailchimp_width: 52px;
+$mailchimp_height: 54px;
+$mailchimp_total_width: 800px;
+$mailchimp_total_height: 695px;
+$mailchimp_image: '../images/sprites/sprite.png';
+$mailchimp: (394px, 625px, -394px, -625px, 52px, 54px, 800px, 695px, '../images/sprites/sprite.png', 'mailchimp', );
+$nethouse_name: 'nethouse';
+$nethouse_x: 556px;
+$nethouse_y: 384px;
+$nethouse_offset_x: -556px;
+$nethouse_offset_y: -384px;
+$nethouse_width: 48px;
+$nethouse_height: 56px;
+$nethouse_total_width: 800px;
+$nethouse_total_height: 695px;
+$nethouse_image: '../images/sprites/sprite.png';
+$nethouse: (556px, 384px, -556px, -384px, 48px, 56px, 800px, 695px, '../images/sprites/sprite.png', 'nethouse', );
+$opencart_name: 'opencart';
+$opencart_x: 307px;
+$opencart_y: 332px;
+$opencart_offset_x: -307px;
+$opencart_offset_y: -332px;
+$opencart_width: 56px;
+$opencart_height: 40px;
+$opencart_total_width: 800px;
+$opencart_total_height: 695px;
+$opencart_image: '../images/sprites/sprite.png';
+$opencart: (307px, 332px, -307px, -332px, 56px, 40px, 800px, 695px, '../images/sprites/sprite.png', 'opencart', );
+$raiden_name: 'raiden';
+$raiden_x: 468px;
+$raiden_y: 569px;
+$raiden_offset_x: -468px;
+$raiden_offset_y: -569px;
+$raiden_width: 184px;
+$raiden_height: 48px;
+$raiden_total_width: 800px;
+$raiden_total_height: 695px;
+$raiden_image: '../images/sprites/sprite.png';
+$raiden: (468px, 569px, -468px, -569px, 184px, 48px, 800px, 695px, '../images/sprites/sprite.png', 'raiden', );
+$sa_avatar_name: 'sa-avatar';
+$sa_avatar_x: 460px;
+$sa_avatar_y: 188px;
+$sa_avatar_offset_x: -460px;
+$sa_avatar_offset_y: -188px;
+$sa_avatar_width: 144px;
+$sa_avatar_height: 180px;
+$sa_avatar_total_width: 800px;
+$sa_avatar_total_height: 695px;
+$sa_avatar_image: '../images/sprites/sprite.png';
+$sa_avatar: (460px, 188px, -460px, -188px, 144px, 180px, 800px, 695px, '../images/sprites/sprite.png', 'sa-avatar', );
+$shopify_name: 'shopify';
+$shopify_x: 712px;
+$shopify_y: 569px;
+$shopify_offset_x: -712px;
+$shopify_offset_y: -569px;
+$shopify_width: 38px;
+$shopify_height: 44px;
+$shopify_total_width: 800px;
+$shopify_total_height: 695px;
+$shopify_image: '../images/sprites/sprite.png';
+$shopify: (712px, 569px, -712px, -569px, 38px, 44px, 800px, 695px, '../images/sprites/sprite.png', 'shopify', );
+$slava_zytsar_name: 'slava-zytsar';
+$slava_zytsar_x: 307px;
+$slava_zytsar_y: 197px;
+$slava_zytsar_offset_x: -307px;
+$slava_zytsar_offset_y: -197px;
+$slava_zytsar_width: 126px;
+$slava_zytsar_height: 127px;
+$slava_zytsar_total_width: 800px;
+$slava_zytsar_total_height: 695px;
+$slava_zytsar_image: '../images/sprites/sprite.png';
+$slava_zytsar: (307px, 197px, -307px, -197px, 126px, 127px, 800px, 695px, '../images/sprites/sprite.png', 'slava-zytsar', );
+$unisender_name: 'unisender';
+$unisender_x: 454px;
+$unisender_y: 625px;
+$unisender_offset_x: -454px;
+$unisender_offset_y: -625px;
+$unisender_width: 56px;
+$unisender_height: 50px;
+$unisender_total_width: 800px;
+$unisender_total_height: 695px;
+$unisender_image: '../images/sprites/sprite.png';
+$unisender: (454px, 625px, -454px, -625px, 56px, 50px, 800px, 695px, '../images/sprites/sprite.png', 'unisender', );
+$vm_avatar_name: 'vm-avatar';
+$vm_avatar_x: 612px;
+$vm_avatar_y: 372px;
+$vm_avatar_offset_x: -612px;
+$vm_avatar_offset_y: -372px;
+$vm_avatar_width: 144px;
+$vm_avatar_height: 177px;
+$vm_avatar_total_width: 800px;
+$vm_avatar_total_height: 695px;
+$vm_avatar_image: '../images/sprites/sprite.png';
+$vm_avatar: (612px, 372px, -612px, -372px, 144px, 177px, 800px, 695px, '../images/sprites/sprite.png', 'vm-avatar', );
+$wordpress_name: 'wordpress';
+$wordpress_x: 268px;
+$wordpress_y: 625px;
+$wordpress_offset_x: -268px;
+$wordpress_offset_y: -625px;
+$wordpress_width: 56px;
+$wordpress_height: 56px;
+$wordpress_total_width: 800px;
+$wordpress_total_height: 695px;
+$wordpress_image: '../images/sprites/sprite.png';
+$wordpress: (268px, 625px, -268px, -625px, 56px, 56px, 800px, 695px, '../images/sprites/sprite.png', 'wordpress', );
+$sp_sprite_width: 800px;
+$sp_sprite_height: 695px;
+$sp_sprite_image: '../images/sprites/sprite.png';
+$sp_sprite_sprites: ($ae_avatar, $ag, $ak_avatar, $ak, $an, $bancor, $bitrix, $ds_avatar, $edinin, $gizi, $google_analytics, $ia, $insales, $jm, $joomla, $kulitskiy, $kurkin, $litkevich, $ma_avatar, $magento, $mailchimp, $nethouse, $opencart, $raiden, $sa_avatar, $shopify, $slava_zytsar, $unisender, $vm_avatar, $wordpress, );
+$sp_sprite: (800px, 695px, '../images/sprites/sprite.png', $sp_sprite_sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.how-work {
+	background-color: $dark-indigo-two;
+	margin-top: -0.1rem;
+	padding: 12rem 0 12.5rem 0;
+	position: relative;
+	z-index: 5;
+	&__title-desk {
+		font-size: 2rem;
+		font-weight: 300;
+		color: $white-60;
+		padding-bottom: 6rem;
+		padding-top: 5rem;
+		width: 95%;
+		margin: 0 auto;
+	}
+	&__bottom-desk {
+		h3 {
+			margin-top: 4.6rem;
+			margin-bottom: 4.4rem;
+		}
+		.text {
+			line-height: 2.4rem;
+			font-size: 2rem;
+			margin-bottom: 2.8rem;
+			font-weight: 300;
+			color: $white-60;
+		}
+		.disclaimer {
+			line-height: 2.4rem;
+			font-size: 1.4rem;
+			color: $white-20;
+		}
+	}
+}
+
+.steps {
+	position: relative;
+	&__list {
+		display: flex;
+		list-style: none;
+	}
+	&__item {
+		flex-basis: 33.3333%;
+		padding-left: 10.5rem;
+		&:first-child {
+			padding-top: 27.6rem;
+		}
+		&:nth-child(2) {
+			padding-top: 20.5rem;
+		}
+		&:last-child {
+			padding-top: 6rem;
+		}
+	}
+	&__number {
+		background-image: linear-gradient(45deg, $coral, $pastel-orange);
+		box-shadow: 7.1px 7.1px 25px 0 $dusty-orange-35;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 4rem;
+		width: 6rem;
+		font-weight: 600;
+		border-radius: 50%;
+		color: $dark-blue-grey;
+		position: relative;
+		top: -0.9rem;
+		z-index: 2;
+	}
+	&__line {
+		position: absolute;
+		left: 13rem;
+		top: 5.5rem;
+	}
+	&__desk {
+		color: $white-40;
+		margin-bottom: 2.2rem;
+		line-height: 2.4rem;
+	}
+	&__title {
+		margin-bottom: 2.8rem;
+		line-height: 2.4rem;
+	}
+}
