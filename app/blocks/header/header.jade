@@ -3,6 +3,7 @@ include ../navigation/navigation
 mixin header()
 
 	+b.HEADER.header
+		+e.IMG.image(src="images/shapes-hero.svg" alt="image")
 		.corner
 			img(src="images/corner.png" alt="Corner")
 		+navigation
@@ -11,7 +12,7 @@ mixin header()
 				.col-md-8.col-md-offset-2
 					h1.text-center Blockchain rewards and loyalty platform
 					+e.P.description.text-center Shoppers are rewarded for purchases with cryptocurrency instead of loyalty points.
-					button.button.header-button Stay Tuned!
+					button.button.header-button(data-toggle="modal" data-target="#tuned") Stay Tuned!
 						span
 					+b.social.UL
 						+e.LI.social-item

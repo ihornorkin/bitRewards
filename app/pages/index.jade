@@ -10,6 +10,7 @@ include /blocks/benefits/benefits
 include /blocks/pre-sale/pre-sale
 include /blocks/team/team
 include /blocks/roadmap/roadmap
+include /blocks/modal/modal
 
 block head
 	- var pageTitle = 'BitRewards';
@@ -27,6 +28,7 @@ html(lang='ru')
 		+team
 		+roadmap
 		+footer
+		+modal
 
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js')
 		+scripts(['app.min.js'])

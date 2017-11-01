@@ -12,12 +12,6 @@
 		color: $white-60;
 		margin-bottom: 4.6rem;
 	}
-	&__field {
-		background-color: $dark-blue-grey-two;
-		font-size: 1.5rem;
-		text-align: center;
-		color: $white-50;
-	}
 	&__field-wrapper {
 		display: flex;
 		align-items: center;
@@ -26,7 +20,7 @@
 	&__field {
 		height: 5.6rem;
 		border-radius: 2.8rem;
-		width: 40rem;
+		width: 42rem;
 		background-color: $dark-blue-grey-two;
 		border: solid 1px $dusty-orange;
 		position: relative;

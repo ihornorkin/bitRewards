@@ -1,5 +1,15 @@
 .navigation {
 	padding: 1rem 0 0 0;
+	position: absolute;
+	width: 100%;
+	transition: 0.4s;
+	&.fixed {
+		position: fixed;
+		background-color: $dark-indigo-two;
+		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+		padding-bottom: 1rem;
+		z-index: 10;
+	}
 	&__menu {
 		display: flex;
 		align-items: center;
@@ -13,16 +23,45 @@
 		left: -2rem;
 	}
 	&__nav-item {
-		padding: 0 1.2rem;
+		margin: 0 1.2rem;
+		position: relative;
+		&:hover {
+			a {
+				text-decoration: none;
+				color: $pastel-orange;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 0.6rem;
+			height: 0.6rem;
+			border-radius: 50%;
+			background-color: $dusty-orange;
+			bottom: -2rem;
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 0;
+			transition: opacity 0.4s;
+		}
 		a {
 			color: $cloudy-blue;
 			font-size: 1.4rem;
+			transition: color 0.4s;
 		}
 		&:first-child {
-			padding-left: 0;
+			margin-left: 0;
 		}
 		&:last-child {
-			padding-right: 0;
+			margin-right: 0;
+		}
+	}
+	&__nav-item--active {
+		&:before {
+			opacity: 1;
+		}
+		a {
+			color: $white;
 		}
 	}
 	&__language {
@@ -38,8 +77,19 @@
 		text-transform: uppercase;
 		margin-bottom: 0;
 		margin-top: 0.5rem;
-		padding-right: 0.8rem;
+		margin-right: 0.8rem;
 		display: inline-block;
+		&:before {
+			content: '';
+			bottom: -1.5rem;
+			background-color: $white;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-100%);
+			border-radius: 50%;
+			width: 0.6rem;
+			height: 0.6rem;
+		}
 		&:hover {
 			color: $pastel-orange;
 		}

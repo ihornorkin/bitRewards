@@ -44,6 +44,12 @@ a {
 	font-size: 1.6rem;
 }
 
+a:focus,
+a:active,
+a:hover {
+	text-decoration: none;
+}
+
 p {
 	font-size: 1.6rem;
 }
@@ -115,4 +121,30 @@ li {
 .jspDrag {
 	border-radius: 3px;
 	background-color: $white-30;
+}
+
+.corner-right {
+	width: 0;
+	height: 0;
+	border-top: 11.5rem solid $dark-indigo-four;
+	border-left: 94.5rem solid transparent;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cornet-left {
+	width: 0;
+	height: 0;
+	border-top: 11.5rem solid red;
+	border-right: 94.5rem solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+input {
+	font-size: 1.5rem;
+	text-align: center;
+	color: $white-50;
 }

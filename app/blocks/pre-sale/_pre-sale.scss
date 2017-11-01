@@ -2,6 +2,23 @@
 	position: relative;
 	padding: 11.8rem 0 15rem 0;
 	z-index: 2;
+	.container {
+		position: relative;
+		z-index: 3;
+	}
+	.cornet-left {
+		border-top: 16.5rem solid $dark-slate-blue;
+		border-right: 98vw solid transparent;
+		top: -10rem;
+		z-index: 5;
+	}
+	&__image {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
 	&__rectangle {
 		background-image: linear-gradient(to bottom, $dark-blue-grey, $dark-indigo-two);
 		height: 110%;

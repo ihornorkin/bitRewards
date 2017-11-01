@@ -1,0 +1,11 @@
+mixin modal()
+	.modal.fade(id="tuned" tabindex="-1" role="dialog")
+		.modal-dialog
+			.modal-content
+				button.close.icon-cancel(type="button" data-dismiss="modal")
+				.modal-body
+					.modal-title Subscribe to the project updates
+					form.modal-form
+						input(type="email" placeholder="Your E-mail")
+						button.button(type="submit") Stay Tuned!
+							span

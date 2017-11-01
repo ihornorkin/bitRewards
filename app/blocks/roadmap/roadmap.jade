@@ -2,6 +2,9 @@ include ../subscribe/subscribe
 
 mixin roadmap()
 	+b.SECTION.roadmap
+		+e.image-top(src="images/background-shapes-dark.svg" alt="Shapes")
+		+e.image-bottom(src="images/background-shapes.svg" alt="Shapes")
+		.cornet-left
 		.container
 			.row
 				.col-md-12
@@ -33,7 +36,7 @@ mixin roadmap()
 									+e.P.text A fully-functioning rewards and loyalty system for online merchants allowing to give BRW tokens as rewards and users’ dashboard with cryptowallet.
 							+e.item(data-start="March 2018" data-end="June 2018")
 								+e.wrapper
-									+e.line
+									+e.line.road-map-slider__line--last
 									+e.triagle
 									+e.stage Stage 4
 									+e.P.date November - February, 2018

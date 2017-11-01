@@ -13,6 +13,11 @@
 			font-size: 1.7rem;
 			padding: 0 1rem;
 			color: $dark;
+			transition: color .4s;
+			&:hover,
+			&:active {
+				color: $pastel-orange;
+			}
 		}
 	}
 	.social__social-item a {

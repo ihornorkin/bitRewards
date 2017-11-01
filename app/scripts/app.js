@@ -2,6 +2,7 @@ import $ from 'jquery';
 import 'slick-carousel';
 import 'jquery-mousewheel';
 import 'jscrollpane';
+import 'bootstrap';
 
 /* Example import node_modules*/
 /* import 'slick-carousel'; */
@@ -25,6 +26,16 @@ const mainModule = (function () {
 	 do code
 	 }
 	 */
+
+	const stickyMenu = function () {
+		$(window).bind('scroll', function () {
+			if ($(window).scrollTop() > 50) {
+				$('.navigation').addClass('fixed');
+			} else {
+				$('.navigation').removeClass('fixed');
+			}
+		});
+	};
 
 	const lang = function() {
 		$('.navigation__language').on('click', function () {
@@ -56,7 +67,10 @@ const mainModule = (function () {
 			nextArrow: $('.roadmap__slide-nav .icon-right')
 		});
 		$('#roadmap').on('beforeChange', function(event, slick, direction) {
-			$('.slick-active:eq(3) .road-map-slider__line').addClass('last-line');
+			$('.slick-active .road-map-slider__line').removeClass('road-map-slider__line--last');
+		});
+		$('#roadmap').on('afterChange', function(event, slick, direction) {
+			$('.slick-active:eq(3) .road-map-slider__line').addClass('road-map-slider__line--last');
 		});
 	};
 
@@ -108,6 +122,7 @@ const mainModule = (function () {
 	/* Declarate function in array */
 	const init = function () {
 		elements = cacheDOM();
+		stickyMenu();
 		lang();
 		button();
 		roadMap();

@@ -1,0 +1,74 @@
+.modal-dialog {
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+}
+
+button.close {
+	position: absolute;
+	z-index: 5;
+	font-size: 2.8rem;
+	color: $white;
+	opacity: 1;
+	box-shadow: none;
+	float: none;
+	text-shadow: none;
+	transition: 0.4s;
+	left: 50%;
+	top: -5rem;
+	transform: translateX(-50%);
+	&:hover,
+	&:active {
+		opacity: 1;
+		color: $pastel-orange-two;
+	}
+}
+
+.modal-body {
+	text-align: center;
+}
+
+.modal-title {
+	font-size: 2.6rem;
+	font-weight: 300;
+	color: $white;
+	margin-bottom: 6rem;
+}
+
+.modal-form {
+	input {
+		height: 5.6rem;
+		border-radius: 2.8rem;
+		width: 100%;
+		max-width: 33.5rem;
+		display: block;
+		margin: 0 auto;
+		background-color: transparent;
+		border: solid 1px $dusty-orange;
+		z-index: 3;
+	}
+	.button {
+		display: block;
+		margin: 4.5rem auto 0 auto;
+		padding-right: 7rem;
+		padding-left: 7rem;
+	}
+}
+
+.modal-backdrop {
+	background-color: $dark-indigo;
+	opacity: 0.98;
+}
+
+.modal-backdrop.in {
+	opacity: 0.98;
+}

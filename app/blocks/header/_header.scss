@@ -7,7 +7,7 @@ header {
 	overflow: hidden;
 	padding-bottom: 18rem;
 	h1 {
-		margin: 13.2rem auto 2.8rem auto;
+		margin: 20.2rem auto 2.8rem auto;
 	}
 	.corner {
 		position: absolute;
@@ -26,6 +26,13 @@ header {
 		line-height: 1.71;
 		letter-spacing: 0.025em;
 		color: $white;
+	}
+	&__image {
+		transform: rotate(192deg);
+		position: absolute;
+		bottom: -90rem;
+		left: -10rem;
+		width: 2000px;
 	}
 }
 
@@ -50,6 +57,10 @@ header {
 		a {
 			font-size: 5.5rem;
 			color: $white;
+			transition: color 0.4s;
+			&:hover {
+				color: $pastel-orange;
+			}
 		}
 	}
 }
