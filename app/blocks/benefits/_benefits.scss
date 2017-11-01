@@ -1,7 +1,7 @@
 .benefits {
 	background-color: $dark-indigo-two;
 	position: relative;
-	padding: 15rem 0;
+	padding: 4rem 0 2rem 0;
 	z-index: 3;
 	&__rectangle {
 		position: absolute;
@@ -12,38 +12,58 @@
 		background-color: $dark-indigo-two;
 	}
 	&__icon {
-		font-size: 9rem;
+		font-size: 9.5rem;
+		line-height: 9rem;
 		text-align: center;
 		color: $pinkish-orange;
 	}
 	h2 {
-		margin-bottom: 12rem;
+		margin-bottom: 10.2rem;
 	}
 	&__item {
-		margin-bottom: 14rem;
+		margin-bottom: 13.6rem;
 		h3 {
 			font-size: 4rem;
 			font-weight: 600;
 			line-height: 0.6;
 			text-align: center;
 			color: $white;
-			margin-bottom: 3.5rem;
-		}
-		h4 {
-			text-align: center;
+			margin-bottom: 3.2rem;
+			margin-top: 0.9rem;
 		}
 	}
+	&__item.second-item {
+		margin-bottom: 11.4rem;
+	}
 	&__text {
-		width: 70%;
+		width: 90%;
 		margin: 0 auto 4rem auto;
 		h4 {
 			margin-bottom: 8rem;
+			text-align: center;
+			font-size: 3.2rem;
+			color: $white;
+			font-weight: 300;
+			margin-top: 4rem;
 		}
 		p {
 			text-align: center;
 			font-size: 1.8rem;
 			line-height: 1.33;
 			color: $cloudy-blue;
+			margin-bottom: 2.6rem;
+		}
+	}
+	&__get-api {
+		text-align: center;
+		font-size: 1.8rem;
+		color: $cloudy-blue;
+		letter-spacing: 0.01em;
+		position: relative;
+		top: -1rem;
+		strong {
+			font-weight: normal;
+			text-transform: uppercase;
 		}
 	}
 }
@@ -53,7 +73,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 80%;
+	width: 94%;
 	margin-left: auto;
 	margin-right: auto;
 	&__item {
@@ -83,32 +103,53 @@
 .platform {
 	display: flex;
 	flex-wrap: wrap;
-	width: 60%;
-	margin: 2rem auto;
+	width: 70%;
+	margin: 2rem auto 0 auto;
 	list-style: none;
 	justify-content: center;
 	&__item {
-		padding: 0 1.5rem;
-		margin-bottom: 5.5rem;
+		padding: 0 2rem;
+		margin-bottom: 3.6rem;
+		&:hover {
+			.platform__title {
+				color: $pastel-orange;
+			}
+			.platform__active {
+				opacity: 1;
+			}
+			.platform__no-active {
+				opacity: 0;
+			}
+		}
 	}
 	&__image {
 		height: 5.6rem;
-		margin-bottom: 1.2rem;
+		margin-bottom: 0.6rem;
 		position: relative;
-		div {
-			filter: grayscale(100%);
-			opacity: 0.5;
-			margin: auto;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-		}
+	}
+	&__active {
+		opacity: 0;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		transition: opacity 0.4s;
+	}
+	&__no-active {
+		margin: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		transition: opacity 0.4s;
 	}
 	&__title {
 		text-align: center;
 		color: $cloudy-blue-50;
+		transition: color 0.4s;
 	}
 }
 
@@ -119,11 +160,25 @@
 	background-position: $wordpress_offset_x $wordpress_offset_y;
 }
 
+.wordpress-no-active {
+	background-image: url($wordpress_un_image);
+	width: $wordpress_un_width;
+	height: $wordpress_un_height;
+	background-position: $wordpress_un_offset_x $wordpress_un_offset_y;
+}
+
 .magento {
 	background-image: url($magento_image);
 	width: $magento_width;
 	height: $magento_height;
 	background-position: $magento_offset_x $magento_offset_y;
+}
+
+.magento-no-active {
+	background-image: url($magento_un_image);
+	width: $magento_un_width;
+	height: $magento_un_height;
+	background-position: $magento_un_offset_x $magento_un_offset_y;
 }
 
 .joomla {
@@ -133,11 +188,25 @@
 	background-position: $joomla_offset_x $joomla_offset_y;
 }
 
+.joomla-no-active {
+	background-image: url($joomla_un_image);
+	width: $joomla_un_width;
+	height: $joomla_un_height;
+	background-position: $joomla_un_offset_x $joomla_un_offset_y;
+}
+
 .opencart {
 	background-image: url($opencart_image);
 	width: $opencart_width;
 	height: $opencart_height;
 	background-position: $opencart_offset_x $opencart_offset_y;
+}
+
+.opencart-no-active {
+	background-image: url($opencart_un_image);
+	width: $opencart_un_width;
+	height: $opencart_un_height;
+	background-position: $opencart_un_offset_x $opencart_un_offset_y;
 }
 
 .shopify {
@@ -147,11 +216,25 @@
 	background-position: $shopify_offset_x $shopify_offset_y;
 }
 
+.shopify-no-active {
+	background-image: url($shopify_un_image);
+	width: $shopify_un_width;
+	height: $shopify_un_height;
+	background-position: $shopify_un_offset_x $shopify_un_offset_y;
+}
+
 .nethouse {
 	background-image: url($nethouse_image);
 	width: $nethouse_width;
 	height: $nethouse_height;
 	background-position: $nethouse_offset_x $nethouse_offset_y;
+}
+
+.nethouse-no-active {
+	background-image: url($nethouse_un_image);
+	width: $nethouse_un_width;
+	height: $nethouse_un_height;
+	background-position: $nethouse_un_offset_x $nethouse_un_offset_y;
 }
 
 .unisender {
@@ -161,11 +244,25 @@
 	background-position: $unisender_offset_x $unisender_offset_y;
 }
 
+.unisender-no-active {
+	background-image: url($unisender_un_image);
+	width: $unisender_un_width;
+	height: $unisender_un_height;
+	background-position: $unisender_un_offset_x $unisender_un_offset_y;
+}
+
 .mailchimp {
 	background-image: url($mailchimp_image);
 	width: $mailchimp_width;
 	height: $mailchimp_height;
 	background-position: $mailchimp_offset_x $mailchimp_offset_y;
+}
+
+.mailchimp-no-active {
+	background-image: url($mailchimp_un_image);
+	width: $mailchimp_un_width;
+	height: $mailchimp_un_height;
+	background-position: $mailchimp_un_offset_x $mailchimp_un_offset_y;
 }
 
 .google-analytics {
@@ -175,11 +272,25 @@
 	background-position: $google_analytics_offset_x $google_analytics_offset_y;
 }
 
+.google-analytics-no-active {
+	background-image: url($google_analitics_un_image);
+	width: $google_analitics_un_width;
+	height: $google_analitics_un_height;
+	background-position: $google_analitics_un_offset_x $google_analitics_un_offset_y;
+}
+
 .bitrix {
 	background-image: url($bitrix_image);
 	width: $bitrix_width;
 	height: $bitrix_height;
 	background-position: $bitrix_offset_x $bitrix_offset_y;
+}
+
+.bitrix-no-active {
+	background-image: url($bitrix_un_image);
+	width: $bitrix_un_width;
+	height: $bitrix_un_height;
+	background-position: $bitrix_un_offset_x $bitrix_un_offset_y;
 }
 
 .insales {
@@ -189,9 +300,17 @@
 	background-position: $insales_offset_x $insales_offset_y;
 }
 
+.insales-no-active {
+	background-image: url($insales_un_image);
+	width: $insales_un_width;
+	height: $insales_un_height;
+	background-position: $insales_un_offset_x $insales_un_offset_y;
+}
+
 .technology {
 	display: flex;
 	list-style: none;
+	margin-top: 6rem;
 	&__logo {
 		position: relative;
 		width: 100%;
@@ -206,6 +325,7 @@
 			font-size: 2.6rem;
 			font-weight: 600;
 			color: $white;
+			margin-bottom: 0.1rem;
 		}
 	}
 	&__text {

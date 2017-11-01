@@ -1,6 +1,6 @@
 .pre-sale {
 	position: relative;
-	padding: 15rem 0;
+	padding: 11.8rem 0 15rem 0;
 	z-index: 2;
 	&__rectangle {
 		background-image: linear-gradient(to bottom, $dark-blue-grey, $dark-indigo-two);
@@ -11,23 +11,26 @@
 		top: -10%;
 	}
 	h2 {
-		margin-bottom: 5rem;
+		margin-bottom: 6rem;
 	}
 	&__desk {
 		text-align: center;
 		font-size: 3.2rem;
 		font-weight: 300;
 		color: $white;
-		margin: 4rem 0;
+		margin: 4rem 0 5rem 0;
 	}
 	.button {
 		margin: 0 auto;
+		padding-left: 5.2rem;
+		padding-right: 5.2rem;
 	}
 }
 
 .table-step {
 	background-color: $dark-slate-blue;
-	padding: 0 10%;
+	padding: 2.5rem 9%;
+	border-radius: 1.2rem;
 	&__list {
 		list-style: none;
 		display: flex;
@@ -39,12 +42,11 @@
 		width: 100%;
 		align-items: center;
 		border-bottom: 1px solid $white-50;
+		padding: 2.5rem 0;
 		p,
 		h4 {
 			width: 50%;
 			margin: 0;
-			padding-top: 3rem;
-			padding-bottom: 3rem;
 		}
 		p {
 			text-align: right;
@@ -57,6 +59,8 @@
 			letter-spacing: 0.025em;
 			color: $white;
 			font-size: 1.8rem;
+			font-weight: normal;
+			text-transform: uppercase;
 		}
 	}
 	&__table-desk {
@@ -66,7 +70,6 @@
 		text-align: center;
 		color: $white;
 		margin-bottom: 0;
-		padding-top: 2.5rem;
-		padding-bottom: 5rem;
+		padding: 0.7rem 0 1.1rem 0;
 	}
 }

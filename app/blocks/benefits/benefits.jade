@@ -13,7 +13,7 @@ mixin benefits()
 						+e.text
 							p Low risk due to the proven solution — BitRewards is based on the existing rewards and loyalty system from an innovative market leader with a proven success record in hundreds of online stores.
 							p Learn more about the full list of the <strong>proven tools to Attract, Convert and Upsell</strong>
-					+e.item
+					+e.item.second-item
 						+e.icon.icon-market
 						h3 ​Huge​ ​market
 						+e.text
@@ -36,53 +36,65 @@ mixin benefits()
 						+e.icon.icon-api
 						h3 Powerful API
 						+e.text
-							p The BitRewards solution is compatible with most existing e-commerce platforms. It is easy to implement and has a simple API.
+							p The BitRewards solution is compatible with most existing e-commerce platforms.<br /> It is easy to implement and has a simple API.
 							h4 For any device. On any platform.
 						+b.UL.platform
 							+e.LI.item
 								+e.image
-									.wordpress
+									+e.active.wordpress
+									+e.no-active.wordpress-no-active
 								+e.title WordPress
 							+e.LI.item
 								+e.image
-									.magento
+									+e.active.magento
+									+e.no-active.magento-no-active
 								+e.title Magento
 							+e.LI.item
 								+e.image
-									.joomla
+									+e.active.joomla
+									+e.no-active.joomla-no-active
 								+e.title Joomla
 							+e.LI.item
 								+e.image
-									.opencart
+									+e.active.opencart
+									+e.no-active.opencart-no-active
 								+e.title OpenCart
 							+e.LI.item
 								+e.image
-									.shopify
+									+e.active.shopify
+									+e.no-active.shopify-no-active
 								+e.title Shopify
 							+e.LI.item
 								+e.image
-									.nethouse
+									+e.active.nethouse
+									+e.no-active.nethouse-no-active
 								+e.title Nethouse
 							+e.LI.item
 								+e.image
-									.unisender
+									+e.active.unisender
+									+e.no-active.unisender-no-active
 								+e.title Unisender
 							+e.LI.item
 								+e.image
-									.mailchimp
+									+e.active.mailchimp
+									+e.no-active.mailchimp-no-active
 								+e.title Mailchimp
 							+e.LI.item
 								+e.image
-									.google-analytics
+									+e.active.google-analytics
+									+e.no-active.google-analytics-no-active
 								+e.title Google<br /> Analics
 							+e.LI.item
 								+e.image
-									.bitrix
+									+e.active.bitrix
+									+e.no-active.bitrix-no-active
 								+e.title 1C-Bitrix
 							+e.LI.item
 								+e.image
-									.insales
+									+e.active.insales
+									+e.no-active.insales-no-active
 								+e.title InSales
+						+e.P.get-api ...and <strong>Giftd API</strong> for anything else.
 					+e.item
 						+e.icon.icon-blockchain
 						h3 Cutting Edge Blockchain Technology

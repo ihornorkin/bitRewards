@@ -1,13 +1,15 @@
 .roadmap {
 	background-image: linear-gradient(to bottom, $dark-blue-grey, $dark-indigo-two);
-	padding: 15rem 0;
+	padding: 15rem 0 10rem 0;
+	position: relative;
+	margin-top: -5rem;
 	h2 {
-		margin: 4rem 0;
+		margin: 3.5rem 0 8.8rem 0;
 	}
 	&__slide-nav {
 		display: flex;
 		justify-content: center;
-		margin: 9rem 0 0 0;
+		margin: 8rem 0 0 0;
 		div {
 			margin: 0 1.5rem;
 			font-size: 4.6rem;
@@ -117,7 +119,7 @@
 		font-size: 2.2rem;
 		font-weight: 600;
 		color: $white-50;
-		padding: 3rem 0;
+		padding: 1.8rem 0 0.2rem 0;
 	}
 	&__text {
 		font-size: 1.4rem;
@@ -127,6 +129,12 @@
 	&__item--present {
 		.road-map-slider__wrapper {
 			background-color: $dark-slate-blue;
+		}
+		.road-map-slider__line {
+			background-color: $coral-two;
+			&:before {
+				background-color: $coral-two;
+			}
 		}
 		.road-map-slider__triagle {
 			width: 0;
@@ -158,6 +166,16 @@
 		}
 	}
 	&__item--today {
+		.road-map-slider__wrapper {
+			background-color: $dark-slate-blue;
+		}
+		.road-map-slider__line {
+			&:before {
+				width: 2.8rem;
+				height: 2.8rem;
+				background-color: $dusty-orange;
+			}
+		}
 		.road-map-slider__wrapper {
 			background-color: $dark-slate-blue-four;
 		}

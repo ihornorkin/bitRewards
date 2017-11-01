@@ -1,5 +1,7 @@
 import $ from 'jquery';
 import 'slick-carousel';
+import 'jquery-mousewheel';
+import 'jscrollpane';
 
 /* Example import node_modules*/
 /* import 'slick-carousel'; */
@@ -24,6 +26,12 @@ const mainModule = (function () {
 	 }
 	 */
 
+	const lang = function() {
+		$('.navigation__language').on('click', function () {
+			$(this).find('ul').toggleClass('navigation__language-list--open');
+		});
+	};
+
 	const button = function () {
 		$('.button').on('mouseenter', function (e) {
 			var parentOffset = $(this).offset(),
@@ -37,7 +45,7 @@ const mainModule = (function () {
 					relY = e.pageY - parentOffset.top;
 				$(this).find('span').css({top: relY, left: relX})
 			});
-	}
+	};
 
 	const roadMap = function () {
 		$('#roadmap').slick({
@@ -47,7 +55,10 @@ const mainModule = (function () {
 			prevArrow: $('.roadmap__slide-nav .icon-left'),
 			nextArrow: $('.roadmap__slide-nav .icon-right')
 		});
-	}
+		$('#roadmap').on('beforeChange', function(event, slick, direction) {
+			$('.slick-active:eq(3) .road-map-slider__line').addClass('last-line');
+		});
+	};
 
 	const date = function () {
 		var month = {
@@ -90,12 +101,18 @@ const mainModule = (function () {
 		});
 	};
 
+	const scroll = function() {
+		$('.leadership__text-wrapper, .advisors__text-wrapper').jScrollPane();
+	}
+
 	/* Declarate function in array */
 	const init = function () {
 		elements = cacheDOM();
+		lang();
 		button();
 		roadMap();
 		date();
+		scroll();
 		/* exampleFunction(); */
 	};
 

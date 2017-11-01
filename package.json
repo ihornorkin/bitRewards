@@ -90,6 +90,8 @@
     "jade-get-data": "^1.0.0",
     "jade-injected": "^1.0.2",
     "jquery": "^2.1.4",
+    "jquery-mousewheel": "^3.1.13",
+    "jscrollpane": "^2.0.22",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.3.1",
     "node-sass": "^4.5.3",

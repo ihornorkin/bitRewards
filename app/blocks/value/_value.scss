@@ -4,8 +4,14 @@
 	background-size: cover;
 	background-position: 50%;
 	position: relative;
-	padding-bottom: 15rem;
+	padding-bottom: 14rem;
 	z-index: 4;
+	.second-title {
+		padding-top: 20.8rem;
+	}
+	.third-title {
+		padding-top: 19rem;
+	}
 	&__rect {
 		position: absolute;
 		height: 5rem;
@@ -15,25 +21,39 @@
 		background-color: $dark-slate-blue-two;
 	}
 	h2 {
-		padding: 15rem 0 6rem 0;
+		padding: 12rem 0 4.8rem 0;
 	}
 	&__text {
+		padding-top: 2.6rem;
 		p {
 			font-size: 2rem;
 			font-weight: 300;
 			color: $white;
-			margin-bottom: 3rem;
+			margin-bottom: 1.8rem;
 		}
 		blockquote {
-			margin-top: 1rem;
+			margin-top: 3.5rem;
 			font-size: 3.2rem;
 			font-weight: 300;
 			color: $white;
 			padding: 0 1rem 0 1.5rem;
 			border-color: $orangish;
+			line-height: 3.8rem;
 			strong {
 				font-weight: 600;
 			}
 		}
+		blockquote.small {
+			font-size: 2.8rem;
+			line-height: 3.4rem;
+		}
+	}
+	&__value-wrapper {
+		display: flex;
+		float: left;
+		padding-bottom: 9rem;
+	}
+	&__value-wrapper--reverse {
+		flex-direction: row-reverse;
 	}
 }

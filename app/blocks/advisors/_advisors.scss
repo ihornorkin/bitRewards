@@ -1,9 +1,20 @@
 .advisors {
 	transform: skewY(2.5deg);
-	padding-bottom: 6rem;
+	padding-bottom: 14rem;
 	background-color: $member-bg;
 	position: relative;
 	z-index: 3;
+	h2 {
+		margin: 7.5rem 0 5.8rem 0;
+	}
+	.rectangle {
+		background-color: $member-bg;
+		position: absolute;
+		height: 8rem;
+		top: -7.5rem;
+		left: 0;
+		width: 100%;
+	}
 	.container {
 		transform: skewY(-2.5deg);
 	}
@@ -19,21 +30,22 @@
 		margin: 7rem 0;
 	}
 	&__persone {
-		padding: 0 1.5rem;
+		flex-grow: 1;
+		margin: 0 1.5rem;
 		margin-bottom: 2.5rem;
-		width: 33.333333%;
+		width: calc(33.333333% - 3rem);
 		height: 34.8rem;
 		box-shadow: 0 18px 100px -35px rgba(0, 0, 0, 0.75);
 		position: relative;
 		overflow: hidden;
 		&:first-child {
-			padding-left: 0;
+			margin-left: 0;
 		}
 		&:nth-child(4n+4) {
-			padding-right: 0;
+			margin-right: 0;
 		}
 		&:nth-child(5n+5) {
-			padding-left: 0;
+			margin-left: 0;
 		}
 	}
 	&__wrapper {
@@ -72,12 +84,14 @@
 		transform: translateX(100%);
 		transition: transform 0.3s ease-in;
 	}
+	&__text-wrapper {
+		height: calc(100% - 6rem);
+		overflow: auto;
+	}
 	&__about {
 		font-size: 1.6rem;
 		text-align: left;
 		color: $white-80;
-		height: calc(100% - 6rem);
-		overflow: auto;
 	}
 	&__social {
 		position: absolute;

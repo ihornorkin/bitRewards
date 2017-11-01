@@ -1,25 +1,37 @@
 .other-member-section {
 	background-color: $dark-slate-blue-three;
+	position: relative;
+	z-index: 4;
+	padding-bottom: 6.5rem;
+	h2 {
+		margin: 9rem 0 6.5rem 0;
+	}
+	.rectangle {
+		content: '';
+		position: absolute;
+		height: 8rem;
+		width: 100%;
+		top: -7.5rem;
+		left: 0;
+		background-color: $dark-slate-blue-three;
+	}
 }
 
 .other-member {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	h2 {
-		margin: 4rem 0;
-	}
 	&__item {
 		width: 33.33333%;
 		display: flex;
-		margin-bottom: 5.5rem;
+		margin-bottom: 6.3rem;
 	}
 	&__avatar {
 		width: 12.6rem;
 		height: 12.6rem;
 		position: relative;
 		background-image: url($slava_zytsar_image);
-		margin-right: 3rem;
+		margin-right: 2.8rem;
 		&:before {
 			content: '';
 			position: absolute;
@@ -37,6 +49,7 @@
 	&__name {
 		font-size: 2rem;
 		color: $white;
+		margin-bottom: 0.5rem;
 	}
 	&__position {
 		font-size: 1.6rem;
@@ -44,10 +57,10 @@
 	}
 	&__social {
 		position: absolute;
-		bottom: 0;
+		bottom: -0.8rem;
 		left: 0;
 		opacity: 0.3;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 		color: $white;
 	}
 }
