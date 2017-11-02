@@ -3,8 +3,14 @@
 	position: relative;
 	z-index: 4;
 	padding-bottom: 6.5rem;
+	@media (max-width: $tablet) {
+		padding-bottom: 10.5rem;
+	}
 	h2 {
 		margin: 9rem 0 6.5rem 0;
+		@media (max-width: $tablet) {
+			margin: 6.5rem 0;
+		}
 	}
 	.rectangle {
 		content: '';
@@ -27,11 +33,14 @@
 		margin-bottom: 6.3rem;
 		position: relative;
 		&:hover {
-			.other-member__avatar {
-				opacity: 0;
+			.other-member__avatar-wrapper {
+				&:before {
+					z-index: 3;
+				}
 			}
 			.other-member__active-avatar {
 				opacity: 1;
+				z-index: 2;
 			}
 		}
 	}
@@ -77,6 +86,9 @@
 		font-size: 2rem;
 		color: $white;
 		margin-bottom: 0.5rem;
+		@media (max-width: $tablet) {
+			line-height: 2.4rem;
+		}
 	}
 	&__position {
 		font-size: 1.6rem;
@@ -90,6 +102,9 @@
 		font-size: 1.7rem;
 		color: $white;
 		transition: 0.4s;
+		@media (max-width: $tablet) {
+			bottom: -5.3rem;
+		}
 		&:hover {
 			color: $pinkish-orange;
 			opacity: 1;

@@ -4,8 +4,18 @@
 	background-color: $member-bg;
 	position: relative;
 	z-index: 3;
+	.container {
+		@media (max-width: $tablet) {
+			padding: 0;
+			position: relative;
+			overflow: hidden;
+		}
+	}
 	h2 {
 		margin: 7.5rem 0 5.8rem 0;
+		@media (max-width: $tablet) {
+			margin-top: 13rem;
+		}
 	}
 	.rectangle {
 		background-color: $member-bg;
@@ -25,6 +35,15 @@
 		list-style: none;
 		width: 90%;
 		margin: 0 auto;
+		@media (max-width: $tablet) {
+			display: block;
+			width: 100%;
+		}
+		.slick-slide {
+			@media (max-width: $tablet) {
+				padding: 0 1.5rem;
+			}
+		}
 	}
 	&__title {
 		margin: 7rem 0;
@@ -83,6 +102,9 @@
 		top: 0;
 		transform: translateX(100%);
 		transition: transform 0.3s ease-in;
+		@media (max-width: $tablet) {
+			width: 100%;
+		}
 	}
 	&__text-wrapper {
 		height: calc(100% - 6rem);
@@ -111,7 +133,10 @@
 	&__position {
 		font-size: 1.6rem;
 		color: $white-40;
-		margin-bottom: 0;
+		margin: 0 6rem 0 6rem;
+		@media (max-width: $tablet) {
+			margin: 0 1rem;
+		}
 	}
 }
 

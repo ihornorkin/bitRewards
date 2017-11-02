@@ -6,11 +6,21 @@
 	position: relative;
 	padding-bottom: 14rem;
 	z-index: 4;
+	@media (max-width: $tablet) {
+		padding-bottom: 9rem;
+	}
 	.second-title {
 		padding-top: 20.8rem;
+		@media (max-width: $tablet) {
+			padding-top: 15rem;
+			padding-bottom: 4.8rem;
+		}
 	}
 	.third-title {
 		padding-top: 19rem;
+		@media (max-width: $tablet) {
+			padding-top: 16rem;
+		}
 	}
 	&__rect {
 		position: absolute;
@@ -22,14 +32,24 @@
 	}
 	h2 {
 		padding: 12rem 0 4.8rem 0;
+		@media (max-width: $tablet) {
+			padding: 10.5rem 0 6rem 0;
+		}
 	}
 	&__text {
 		padding-top: 2.6rem;
+		@media (max-width: $tablet) {
+			padding-top: 4rem;
+		}
 		p {
 			font-size: 2rem;
 			font-weight: 300;
 			color: $white;
 			margin-bottom: 1.8rem;
+			@media (max-width: $tablet) {
+				line-height: 2.4rem;
+				margin-bottom: 2.8rem;
+			}
 		}
 		blockquote {
 			margin-top: 3.5rem;
@@ -52,8 +72,17 @@
 		display: flex;
 		float: left;
 		padding-bottom: 9rem;
+		@media (max-width: $tablet) {
+			float: none;
+			flex-wrap: wrap;
+		}
 	}
 	&__value-wrapper--reverse {
 		flex-direction: row-reverse;
+	}
+	&__image {
+		@media (max-width: $tablet) {
+			max-width: 100%;
+		}
 	}
 }

@@ -12,7 +12,9 @@ mixin header()
 				.col-md-8.col-md-offset-2
 					h1.text-center Blockchain rewards and loyalty platform
 					+e.P.description.text-center Shoppers are rewarded for purchases with cryptocurrency instead of loyalty points.
-					button.button.header-button(data-toggle="modal" data-target="#tuned") Stay Tuned!
+					button.button.header-button.hidden-sm.hidden-xs(data-toggle="modal" data-target="#tuned") Stay Tuned!
+						span
+					button.button.button-nav.hidden-md.hidden-lg WHITEPAPER
 						span
 					+b.social.UL
 						+e.LI.social-item
@@ -25,3 +27,5 @@ mixin header()
 							a(class="icon-twitter" href="#" target="_blank")
 						+e.LI.social-item
 							a(class="icon-linkedin" href="#" target="_blank")
+					button.button.header-button.hidden-md.hidden-lg(data-toggle="modal" data-target="#tuned") Stay Tuned!
+						span

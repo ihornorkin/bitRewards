@@ -1,6 +1,10 @@
 .subscribe {
 	h2 {
 		margin: 25.5rem 0 5.5rem 0;
+		@media (max-width: $tablet) {
+			margin: 12rem 4rem 4rem 4rem;
+			line-height: 7.2rem;
+		}
 	}
 }
 
@@ -11,11 +15,19 @@
 		text-align: center;
 		color: $white-60;
 		margin-bottom: 4.6rem;
+		@media (max-width: $tablet) {
+			font-size: 2.6rem;
+			line-height: 5rem;
+			color: $white;
+		}
 	}
 	&__field-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@media (max-width: $tablet) {
+			flex-wrap: wrap;
+		}
 	}
 	&__field {
 		height: 5.6rem;
@@ -26,8 +38,17 @@
 		position: relative;
 		right: -5rem;
 		z-index: 3;
+		@media (max-width: $tablet) {
+			position: static;
+			margin-bottom: 1.5rem;
+			width: 100%;
+			max-width: 43.2rem;
+		}
 	}
 	.button {
 		padding: 1.7rem 4rem 1.7rem 9rem;
+		@media (max-width: $tablet) {
+			padding: 1.7rem 25%;
+		}
 	}
 }

@@ -12,23 +12,35 @@
 		top: -68%;
 		left: 50%;
 		transform: translateX(-50%);
+		@media (max-width: $tablet) {
+			top: -9%;
+		}
 	}
 	&__image-bottom {
 		position: absolute;
 		bottom: -60%;
 		left: 50%;
 		transform: translateX(-50%);
+		@media (max-width: $tablet) {
+			bottom: -9%;
+		}
 	}
 	&__image-bottom {
 
 	}
 	h2 {
 		margin: 3.5rem 0 8.8rem 0;
+		@media (max-width: $tablet) {
+			margin-top: 5rem;
+		}
 	}
 	&__slide-nav {
 		display: flex;
 		justify-content: center;
 		margin: 8rem 0 0 0;
+		@media (max-width: $tablet) {
+			margin-top: 4.8rem;
+		}
 		div {
 			margin: 0 1.5rem;
 			font-size: 4.6rem;
@@ -57,6 +69,7 @@
 		width: calc(100% + 3rem);
 		background-color: $twilight;
 		height: 0.2rem;
+		transition: 0.4s;
 		&:before {
 			content: '';
 			position: absolute;

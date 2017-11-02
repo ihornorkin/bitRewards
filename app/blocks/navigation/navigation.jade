@@ -2,6 +2,11 @@ mixin navigation()
 	+b.navigation
 		.container
 			.row
+				.burger-menu.hidden-md.hidden-lg
+					.burger-click-region
+						span.burger-menu-piece
+						span.burger-menu-piece
+						span.burger-menu-piece
 				.col-md-3
 					+e.logo
 						img(src="images/logo-color.svg" alt="logo")
@@ -31,5 +36,5 @@ mixin navigation()
 								+e.LI.language-item CN
 								+e.LI.language-item RU
 				.col-md-2
-					button.button.button-nav WHITEPAPER
+					button.button.button-nav.hidden-sm.hidden-xs WHITEPAPER
 						span

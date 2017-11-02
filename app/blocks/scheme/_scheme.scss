@@ -2,6 +2,9 @@
 	background-color: $dark-blue-tree;
 	position: relative;
 	padding-bottom: 4.5rem;
+	@media (max-width: $tablet) {
+		padding: 8.2rem 0 2rem 0;
+	}
 	.rectangle {
 		background-color: $dark-blue-tree;
 		transform: skewY(1.5deg);
@@ -10,18 +13,32 @@
 		left: 0;
 		top: 0;
 		position: absolute;
+		@media (max-width: $tablet) {
+			top: -2rem;
+			height: 6rem;
+		}
 	}
 	&__steps {
-		margin-bottom: 7rem;
+		margin-bottom: 14rem;
 		display: flex;
+		@media (max-width: $tablet) {
+			display: block;
+		}
 		.scheme__animation {
 			margin-left: auto;
 			display: block;
 			width: 54rem;
+			@media (max-width: $tablet) {
+				width: 100%;
+				margin-top: 3rem;
+			}
 		}
 	}
 	&__steps.steps-reverse {
 		flex-direction: row-reverse;
+		@media (max-width: $tablet) {
+			margin-bottom: 7rem;
+		}
 		.scheme__animation {
 			margin-right: auto;
 			margin-left: 0;
@@ -31,6 +48,9 @@
 		color: $white-60;
 		font-size: 1.8rem;
 		margin-bottom: 3rem;
+		@media (max-width: $tablet) {
+			margin-bottom: 3.2rem;
+		}
 	}
 	&__title {
 		margin-bottom: 2rem;

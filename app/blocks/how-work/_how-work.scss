@@ -4,11 +4,23 @@
 	padding: 12rem 0 12.5rem 0;
 	position: relative;
 	z-index: 5;
+	@media (max-width: $tablet) {
+		padding: 12.7rem 0 12.5rem 0;
+		overflow: hidden;
+		left: -1px;
+		width: calc(100% + 1px);
+	}
 	&__image {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		@media (max-width: $tablet) {
+			top: 14%;
+			left: -1%;
+			width: 250%;
+			transform: none;
+		}
 	}
 	&__title-desk {
 		font-size: 2rem;
@@ -18,11 +30,22 @@
 		padding-top: 5rem;
 		width: 95%;
 		margin: 0 auto;
+		@media (max-width: $tablet) {
+			width: 100%;
+			padding-top: 5.5rem;
+			padding-bottom: 0;
+			line-height: 2.4rem;
+		}
 	}
 	&__bottom-desk {
 		h3 {
 			margin-top: 4.6rem;
 			margin-bottom: 4.4rem;
+			@media (max-width: $tablet) {
+				margin-top: 6.2rem;
+				margin-bottom: 4rem;
+				line-height: 5rem;
+			}
 		}
 		.text {
 			line-height: 2.4rem;
@@ -44,18 +67,34 @@
 	&__list {
 		display: flex;
 		list-style: none;
+		@media (max-width: $tablet) {
+			display: block;
+		}
 	}
 	&__item {
 		flex-basis: 33.3333%;
 		padding-left: 10.5rem;
+		@media (max-width: $tablet) {
+			padding-left: 0;
+			text-align: center;
+		}
 		&:first-child {
 			padding-top: 27.6rem;
+			@media (max-width: $tablet) {
+				padding-top: 6.6rem;
+			}
 		}
 		&:nth-child(2) {
 			padding-top: 20.5rem;
+			@media (max-width: $tablet) {
+				padding-top: 5.8rem;
+			}
 		}
 		&:last-child {
 			padding-top: 6rem;
+			@media (max-width: $tablet) {
+				padding-top: 3.4rem;
+			}
 		}
 	}
 	&__number {
@@ -72,19 +111,34 @@
 		position: relative;
 		top: -0.9rem;
 		z-index: 2;
+		@media (max-width: $tablet) {
+			margin: 0 auto;
+		}
 	}
 	&__line {
 		position: absolute;
 		left: 13rem;
 		top: 5.5rem;
+		@media (max-width: $tablet) {
+			display: none;
+		}
 	}
 	&__desk {
 		color: $white-40;
 		margin-bottom: 2.2rem;
 		line-height: 2.4rem;
+		@media (max-width: $tablet) {
+			width: 70%;
+			margin-right: auto;
+			margin-left: auto;
+		}
 	}
 	&__title {
 		margin-bottom: 2.8rem;
 		line-height: 2.4rem;
+		@media (max-width: $tablet) {
+			line-height: 2.6rem;
+			margin: 1.8rem 0 1rem 0;
+		}
 	}
 }

@@ -1,19 +1,30 @@
 .navigation {
 	padding: 1rem 0 0 0;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	transition: 0.4s;
+	@media (max-width: $tablet) {
+		background-color: $dark-indigo-two;
+		z-index: 5;
+		padding: 1rem 0 0.5rem 0;
+	}
 	&.fixed {
 		position: fixed;
 		background-color: $dark-indigo-two;
 		box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
-		padding-bottom: 1rem;
+		padding: 1rem 0;
 		z-index: 10;
+		@media (max-width: $tablet) {
+			padding: 1rem 0 0 0;
+		}
 	}
 	&__menu {
 		display: flex;
 		align-items: center;
 		margin-top: 1.3rem;
+		@media (max-width: $tablet) {
+			margin: 0;
+		}
 	}
 	&__nav-list {
 		display: flex;
@@ -21,10 +32,30 @@
 		margin-bottom: 0;
 		position: relative;
 		left: -2rem;
+		@media (max-width: $tablet) {
+			padding-top: 3rem;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: $dark-indigo-two;
+			z-index: 5;
+			transform: translateX(-100%);
+			transition: transform 0.4s;
+		}
+		&--open {
+			transform: translateX(0);
+		}
 	}
 	&__nav-item {
 		margin: 0 1.2rem;
 		position: relative;
+		@media (max-width: $tablet) {
+			margin: 0 0;
+			text-align: center;
+			margin-bottom: 5rem;
+		}
 		&:hover {
 			a {
 				text-decoration: none;
@@ -48,6 +79,9 @@
 			color: $cloudy-blue;
 			font-size: 1.4rem;
 			transition: color 0.4s;
+			@media (max-width: $tablet) {
+				font-size: 2rem;
+			}
 		}
 		&:first-child {
 			margin-left: 0;
@@ -68,6 +102,11 @@
 		flex-grow: 1;
 		text-align: center;
 		position: relative;
+		@media (max-width: $tablet) {
+			position: absolute;
+			right: 1rem;
+			top: -4.5rem;
+		}
 	}
 	&__language-active {
 		font-size: 1.3rem;
@@ -85,10 +124,13 @@
 			background-color: $white;
 			position: absolute;
 			left: 50%;
-			transform: translateX(-100%);
+			transform: translateX(-120%);
 			border-radius: 50%;
 			width: 0.6rem;
 			height: 0.6rem;
+			@media (max-width: $tablet) {
+				bottom: -0.8rem;
+			}
 		}
 		&:hover {
 			color: $pastel-orange;
@@ -125,5 +167,124 @@
 	}
 	&__logo {
 		width: 22rem;
+		@media (max-width: $tablet) {
+			margin: 0 auto;
+			max-width: 20rem;
+			width: 100%;
+		}
+	}
+}
+
+/* Burger menu */
+
+.burger-menu {
+	position: absolute;
+	width: 3.5rem;
+	height: 2.2rem;
+	margin: 0 auto;
+	left: 2.4rem;
+	top: 2.7rem;
+}
+
+.burger-click-region {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 5;
+}
+
+$menu-animation-duration: 400ms;
+$menu-animation-timing:   ease-out;
+
+.burger-menu-piece {
+	display: block;
+	position: absolute;
+	width: 100%;
+	border-top: 2px solid $white;
+	transform-origin: 50% 50%;
+	transition: transform $menu-animation-duration $menu-animation-timing;
+
+	&:nth-child(1) {
+		top: 0;
+	}
+
+	&:nth-child(2) {
+		top: 0.8rem;
+		opacity: 1;
+		transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+	}
+
+	&:nth-child(3) {
+		top: 1.6rem;
+	}
+
+	.active & {
+
+		&:nth-child(1) {
+			animation: burger-open-top $menu-animation-duration $menu-animation-timing forwards;
+		}
+
+		&:nth-child(2) {
+			opacity: 0;
+			transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+		}
+
+		&:nth-child(3) {
+			animation: burger-open-bot $menu-animation-duration $menu-animation-timing forwards;
+		}
+	}
+
+	.closing & {
+		&:nth-child(1) {
+			animation: burger-close-top $menu-animation-duration $menu-animation-timing forwards;
+		}
+
+		&:nth-child(3) {
+			animation: burger-close-bot $menu-animation-duration $menu-animation-timing forwards;
+		}
+	}
+}
+
+@keyframes burger-open-top {
+	50% {
+		transform: translate3d(0, 8px, 0);
+	}
+	100% {
+		transform: translate3d(0, 8px, 0) rotate(45deg);
+	}
+}
+
+@keyframes burger-open-bot {
+	50% {
+		transform: translate3d(0, -8px, 0);
+	}
+	100% {
+		transform: translate3d(0, -8px, 0) rotate(-45deg);
+	}
+}
+
+@keyframes burger-close-top {
+	0% {
+		transform: translate3d(0, 8px, 0) rotate(45deg);
+	}
+	50% {
+		transform: translate3d(0, 8px, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes burger-close-bot {
+	0% {
+		transform: translate3d(0, -8px, 0) rotate(-45deg);
+	}
+	50% {
+		transform: translate3d(0, -8px, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
 	}
 }

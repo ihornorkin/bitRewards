@@ -40,4 +40,8 @@
 .button-nav {
 	display: block;
 	padding: 1.3rem 4rem;
+	@media (max-width: $tablet) {
+		margin: 5.7rem auto;
+		padding: 1.7rem 5rem;
+	}
 }
