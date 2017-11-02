@@ -7,7 +7,7 @@ header {
 	overflow: hidden;
 	padding-bottom: 18rem;
 	@media (max-width: $tablet) {
-		padding-bottom: 13rem;
+		padding-bottom: 18rem;
 		background-position: center bottom;
 	}
 	h1 {
@@ -20,10 +20,23 @@ header {
 		position: absolute;
 		bottom: -4.5rem;
 		left: 0;
+		@media (max-width: 1465px) {
+			left: -10%;
+			width: 125%;
+		}
+		@media (max-width: 1140px) {
+			left: auto;
+			right: -2%;
+			bottom: 0;
+		}
 		@media (max-width: $tablet) {
 			bottom: -1.5rem;
-			left: -100%;
-			width: 103rem;
+			left: -90%;
+			width: 220%;
+		}
+		@media (max-width: $mobile) {
+			left: -125%;
+			width: 100rem;
 		}
 		img {
 			width: 100%;
@@ -50,6 +63,11 @@ header {
 		left: -10rem;
 		width: 2000px;
 		@media (max-width: $tablet) {
+			width: 120%;
+			left: -10%;
+			bottom: 4rem;
+		}
+		@media (max-width: $mobile) {
 			width: 800px;
 			bottom: 4rem;
 			left: -10rem;

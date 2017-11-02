@@ -16,6 +16,10 @@
 			top: -6rem;
 			transform: rotate(8deg);
 		}
+		@media (max-width: $mobile) {
+			border-right: 28rem solid transparent;
+			transform: none;
+		}
 	}
 	&__image {
 		position: absolute;

@@ -149,16 +149,53 @@
 	background-position: center;
 }
 
-/* Avatar team */
-
-.advisors__avatar {
-	&.egorov-avatar {
-		width: $ae_avatar_width;
-		height: $ae_avatar_height;
-	}
+.jm {
+	background-image: url(../images/jm.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
+
+.ag {
+	background-image: url(../images/ag.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ia {
+	background-image: url(../images/ia.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Avatar team */
 
 .egorov-avatar {
 	background-image: url($ae_avatar_image);
 	background-position: $ae_avatar_offset_x $ae_avatar_offset_y;
+	width: $ae_avatar_width;
+	height: $ae_avatar_height;
+}
+
+.jm-avatar {
+	background-image: url($jm_image);
+	background-position: $jm_offset_x $jm_offset_y;
+	width: $jm_width;
+	height: $jm_height;
+}
+
+.ag-avatar {
+	background-image: url($ag_image);
+	background-position: $ag_offset_x $ag_offset_y;
+	width: $ag_width;
+	height: $ag_height;
+}
+
+.ia-avatar {
+	background-image: url($ia_image);
+	background-position: $ia_offset_x $ia_offset_y;
+	width: $ia_width;
+	height: $ia_height;
 }

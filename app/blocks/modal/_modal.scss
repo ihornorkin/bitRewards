@@ -55,6 +55,11 @@ button.close {
 		background-color: transparent;
 		border: solid 1px $dusty-orange;
 		z-index: 3;
+		transition: 0.4s;
+		color: $white;
+		&:hover {
+			border-color: $pastel-orange;
+		}
 	}
 	.button {
 		display: block;
@@ -71,4 +76,16 @@ button.close {
 
 .modal-backdrop.in {
 	opacity: 0.98;
+}
+
+.modal-video {
+	iframe {
+		border: none;
+		width: 640px;
+		height: 320px;
+		@media (max-width: $tablet) {
+			width: 100%;
+			height: auto;
+		}
+	}
 }

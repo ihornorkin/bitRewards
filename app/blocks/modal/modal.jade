@@ -9,3 +9,10 @@ mixin modal()
 						input(type="email" placeholder="Your E-mail")
 						button.button(type="submit") Stay Tuned!
 							span
+	.modal.fade(id="video" tabindex="-1" role="dialog")
+		.modal-dialog
+			.modal-content
+				button.close.icon-cancel(type="button" data-dismiss="modal")
+				.modal-body
+					.modal-video
+						iframe(src="https://www.youtube.com/embed/4oh7lct04Us")

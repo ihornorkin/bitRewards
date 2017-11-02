@@ -3,6 +3,7 @@ import 'slick-carousel';
 import 'jquery-mousewheel';
 import 'jscrollpane';
 import 'bootstrap';
+import '../../node_modules/waypoints/lib/jquery.waypoints.min';
 
 /* Example import node_modules*/
 /* import 'slick-carousel'; */
@@ -67,7 +68,14 @@ const mainModule = (function () {
 			nextArrow: $('.roadmap__slide-nav .icon-right'),
 			responsive: [
 				{
-					breakpoint: 768,
+					breakpoint: 769,
+					settings: {
+						slidesToShow: 2.3,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 480,
 					settings: {
 						slidesToShow: 1.4,
 						slidesToScroll: 1
@@ -178,11 +186,11 @@ const mainModule = (function () {
 			});
 		}
 
-		if ($(window).width() < 768) {
+		if ($(window).width() <= 768) {
 			slickify();
 		}
 		$(window).resize(function () {
-			if ($(window).width() < 768) {
+			if ($(window).width() <= 768) {
 				slickify();
 			}
 		});
@@ -195,15 +203,24 @@ const mainModule = (function () {
 				slidesToShow: 3,
 				slidesToScroll: 3,
 				infinite: false,
-				arrows: false
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 450,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 2
+						}
+					}
+				]
 			});
 		}
 
-		if ($(window).width() < 768) {
+		if ($(window).width() <= 768) {
 			slickify();
 		}
 		$(window).resize(function () {
-			if ($(window).width() < 768) {
+			if ($(window).width() <= 768) {
 				slickify();
 			}
 		});
@@ -220,13 +237,40 @@ const mainModule = (function () {
 			});
 		}
 
-		if ($(window).width() < 768) {
+		if ($(window).width() <= 769) {
 			slickify();
 		}
 		$(window).resize(function () {
-			if ($(window).width() < 768) {
+			if ($(window).width() <= 769) {
 				slickify();
 			}
+		});
+	};
+
+	const smoothScroll = function () {
+		$(document).on('click', '.scroll', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 500);
+		});
+	};
+
+	const langButton = function () {
+		$('.navigation__language-active').on('click', function() {
+			$(this).toggleClass('navigation__language-active--click');
+		});
+	};
+
+	const wayPoint = function () {
+		$('section').waypoint({
+			handler: function (direction) {
+				var link =  '[href="#' + $(this.element).attr('id') + '"]';
+				$('.navigation__nav-item').removeClass('navigation__nav-item--active');
+				$(link).parent().addClass('navigation__nav-item--active');
+			}
+			//offset: '20%'
 		});
 	};
 
@@ -243,6 +287,9 @@ const mainModule = (function () {
 		leadershipSlider();
 		othermemberSlider();
 		advisorsSlider();
+		smoothScroll();
+		langButton();
+		wayPoint();
 		/* exampleFunction(); */
 	};
 

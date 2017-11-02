@@ -1,6 +1,7 @@
 .navigation {
 	padding: 1rem 0 0 0;
 	position: fixed;
+	z-index: 10;
 	width: 100%;
 	transition: 0.4s;
 	@media (max-width: $tablet) {
@@ -22,6 +23,9 @@
 		display: flex;
 		align-items: center;
 		margin-top: 1.3rem;
+		@media (min-width: 1025px) and (max-width: 1200px) {
+			align-items: flex-start;
+		}
 		@media (max-width: $tablet) {
 			margin: 0;
 		}
@@ -32,8 +36,12 @@
 		margin-bottom: 0;
 		position: relative;
 		left: -2rem;
+		@media (max-width: $tablet-big) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
 		@media (max-width: $tablet) {
-			padding-top: 3rem;
+			padding-top: 2rem;
 			display: block;
 			position: absolute;
 			top: 0;
@@ -51,10 +59,14 @@
 	&__nav-item {
 		margin: 0 1.2rem;
 		position: relative;
+		transition: color 0.4s;
+		@media (max-width: $tablet-big) {
+			margin-bottom: 1rem;
+		}
 		@media (max-width: $tablet) {
 			margin: 0 0;
 			text-align: center;
-			margin-bottom: 5rem;
+			margin-bottom: 3rem;
 		}
 		&:hover {
 			a {
@@ -91,6 +103,7 @@
 		}
 	}
 	&__nav-item--active {
+		color: $dusty-orange;
 		&:before {
 			opacity: 1;
 		}
@@ -102,9 +115,12 @@
 		flex-grow: 1;
 		text-align: center;
 		position: relative;
+		@media (max-width: $tablet-big) {
+			top: -2.2rem;
+		}
 		@media (max-width: $tablet) {
 			position: absolute;
-			right: 1rem;
+			right: 2rem;
 			top: -4.5rem;
 		}
 	}
@@ -128,12 +144,22 @@
 			border-radius: 50%;
 			width: 0.6rem;
 			height: 0.6rem;
+			transition: background-color 0.4s;
 			@media (max-width: $tablet) {
 				bottom: -0.8rem;
 			}
 		}
 		&:hover {
 			color: $pastel-orange;
+			&:before {
+				background-color: $pastel-orange;
+			}
+		}
+		&--click {
+			color: $pastel-orange;
+			&:before {
+				background-color: $pastel-orange;
+			}
 		}
 	}
 	&__language-list {
@@ -149,6 +175,12 @@
 		visibility: hidden;
 		transition: opacity 0.4s;
 		z-index: 5;
+		@media (max-width: $tablet-big) {
+			left: -2.8rem;
+		}
+		@media (max-width: $tablet) {
+			left: -3.1rem;
+		}
 	}
 	&__language-list--open {
 		opacity: 1;
@@ -184,6 +216,9 @@
 	margin: 0 auto;
 	left: 2.4rem;
 	top: 2.7rem;
+	@media (max-width: $mobile) {
+		left: 1.5rem;
+	}
 }
 
 .burger-click-region {
@@ -195,7 +230,7 @@
 	z-index: 5;
 }
 
-$menu-animation-duration: 400ms;
+$menu-animation-duration: 200ms;
 $menu-animation-timing:   ease-out;
 
 .burger-menu-piece {

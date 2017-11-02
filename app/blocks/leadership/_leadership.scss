@@ -3,7 +3,7 @@
 	padding: 4.6rem 0 9.8rem 0;
 	background-color: $member-bg;
 	position: relative;
-	z-index: 3;
+	z-index: 6;
 	@media (max-width: $tablet) {
 		padding-bottom: 13rem;
 	}
@@ -110,18 +110,6 @@
 	&__text-wrapper {
 		height: calc(100% - 6rem);
 		overflow: auto;
-		@media (max-width: $tablet) {
-			//width: 100% !important;
-		}
-		.jspContainer,
-		.jspPane {
-			@media (max-width: $tablet) {
-				//width: 100% !important;
-			}
-		}
-		.jspHorizontalBar {
-			//display: none;
-		}
 	}
 	&__about {
 		font-size: 1.6rem;
@@ -155,7 +143,7 @@
 	&__position {
 		font-size: 1.6rem;
 		color: $white-40;
-		margin: 0 6rem 0 6rem;
+		margin: 0 2rem 0 2rem;
 	}
 }
 
@@ -168,16 +156,110 @@
 	background-position: center;
 }
 
-/* Avatar team */
-
-.leadership__avatar {
-	&.egorov-avatar {
-		width: $ae_avatar_width;
-		height: $ae_avatar_height;
-	}
+.nevidimov {
+	background-image: url(../images/ah.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
+
+.andrey-kladov {
+	background-image: url(../images/andrey-kladov.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ma {
+	background-image: url(../images/ma.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.vm {
+	background-image: url(../images/vm.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ca {
+	background-image: url(../images/ca.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.is {
+	background-image: url(../images/is.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.ds {
+	background-image: url(../images/ds.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Avatar team */
 
 .egorov-avatar {
 	background-image: url($ae_avatar_image);
 	background-position: $ae_avatar_offset_x $ae_avatar_offset_y;
+	width: $ae_avatar_width;
+	height: $ae_avatar_height;
+}
+
+.nevidimov-avatar {
+	background-image: url($an_image);
+	background-position: $an_offset_x $an_offset_y;
+	width: $an_width;
+	height: $an_height;
+	margin-top: 4.4rem;
+}
+
+.andrey-kladov-avatar {
+	background-image: url($ak_image);
+	background-position: $ak_offset_x $an_offset_y;
+	width: $ak_width;
+	height: $ak_height;
+}
+
+.ma-avatar {
+	background-image: url($ma_avatar_image);
+	background-position: $ma_avatar_offset_x $ma_avatar_offset_y;
+	width: $ma_avatar_width;
+	height: $ma_avatar_height;
+}
+
+.vm-avatar {
+	background-image: url($vm_avatar_image);
+	background-position: $vm_avatar_offset_x $vm_avatar_offset_y;
+	width: $vm_avatar_width;
+	height: $vm_avatar_height;
+}
+
+.ca-avatar {
+	background-image: url($sa_avatar_image);
+	background-position: $sa_avatar_offset_x $sa_avatar_offset_y;
+	width: $sa_avatar_width;
+	height: $sa_avatar_height;
+}
+
+.is-avatar {
+	background-image: url($ak-avatar_image);
+	background-position: $ak-avatar_offset_x $ak-avatar_offset_y;
+	width: $ak-avatar_width;
+	height: $ak-avatar_height;
+}
+
+.ds-avatar {
+	background-image: url($ds_avatar_image);
+	background-position: $ds_avatar_offset_x $ds_avatar_offset_y;
+	width: $ds_avatar_width;
+	height: $ds_avatar_height;
 }

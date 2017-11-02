@@ -89,6 +89,9 @@ li {
 	max-width: 1250px;
 	margin-left: auto;
 	margin-right: auto;
+	@media (min-width: 993px) and (max-width: 1260px) {
+
+	}
 }
 
 .rotate {
@@ -126,7 +129,13 @@ li {
 	text-align: center;
 	color: $white-50;
 	text-transform: uppercase;
+	transition: color 0.4s;
 }
+
+input:hover::-webkit-input-placeholder {color: $pastel-orange;}
+input:hover::-moz-placeholder          {color: $pastel-orange;}
+input:hover:-moz-placeholder           {color: $pastel-orange;}
+input:hover:-ms-input-placeholder      {color: $pastel-orange;}
 
 /* Scroll */
 
@@ -172,7 +181,11 @@ li {
 input {
 	font-size: 1.5rem;
 	text-align: center;
-	color: $white-50;
+	color: $white;
+	transition: 0.4s;
+	&:hover {
+		border-color: $pastel-orange;
+	}
 }
 
 .slick-dots {

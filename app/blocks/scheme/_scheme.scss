@@ -14,8 +14,8 @@
 		top: 0;
 		position: absolute;
 		@media (max-width: $tablet) {
-			top: -2rem;
-			height: 6rem;
+			top: -4rem;
+			height: 9rem;
 		}
 	}
 	&__steps {
@@ -27,10 +27,11 @@
 		.scheme__animation {
 			margin-left: auto;
 			display: block;
-			width: 54rem;
+			width: 100%;
+			max-width: 54rem;
 			@media (max-width: $tablet) {
 				width: 100%;
-				margin-top: 3rem;
+				margin: 3rem auto 0 auto;
 			}
 		}
 	}

@@ -9,7 +9,7 @@
 	}
 	&__image-top {
 		position: absolute;
-		top: -68%;
+		top: -68rem;
 		left: 50%;
 		transform: translateX(-50%);
 		@media (max-width: $tablet) {
@@ -18,7 +18,7 @@
 	}
 	&__image-bottom {
 		position: absolute;
-		bottom: -60%;
+		bottom: -60rem;
 		left: 50%;
 		transform: translateX(-50%);
 		@media (max-width: $tablet) {

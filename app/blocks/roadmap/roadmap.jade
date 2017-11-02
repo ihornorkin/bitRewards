@@ -1,7 +1,7 @@
 include ../subscribe/subscribe
 
 mixin roadmap()
-	+b.SECTION.roadmap
+	+b.SECTION.roadmap(id="roadmap-section")
 		+e.image-top(src="images/background-shapes-dark.svg" alt="Shapes")
 		+e.image-bottom(src="images/background-shapes.svg" alt="Shapes")
 		.cornet-left
@@ -13,19 +13,19 @@ mixin roadmap()
 				.col-md-12
 					+e.slider-wrapper
 						+b.road-map-slider(id="roadmap")
-							+e.item(data-start="january 2017" data-end="February 2017")
+							+e.item(data-start="November 2016" data-end="February 2017")
 								+e.wrapper
 									+e.line
 									+e.triagle
 									+e.stage Stage 1
-									+e.P.date january - February, 2017
+									+e.P.date November - February, 2017
 									+e.P.text Development of points based loyalty system GIFTD designed to reward shoppers.
 							+e.item(data-start="February 2017" data-end="december 2017")
 								+e.wrapper
 									+e.line
 									+e.triagle
 									+e.stage Stage 2
-									+e.P.date February - December, 2017
+									+e.P.date February - August, 2017
 									+e.P.text Structuring the concept of using Ethereum blockchain with loyalty and rewards tools and customer development of the crypto-rewards for e-commerce industry, team hiring.
 							+e.item(data-start="January 2018" data-end="may 2018")
 								+e.wrapper
@@ -39,7 +39,7 @@ mixin roadmap()
 									+e.line.road-map-slider__line--last
 									+e.triagle
 									+e.stage Stage 4
-									+e.P.date November - February, 2018
+									+e.P.date March - June, 2018
 									+e.P.text Merchant’s cryptowallet and Liquidity Smart Contract.
 							+e.item(data-start="June 2018" data-end="July 2018")
 								+e.wrapper
@@ -48,6 +48,41 @@ mixin roadmap()
 									+e.stage Stage 5
 									+e.P.date June - July, 2018
 									+e.P.text Integration of Bitrewards.Network with Lightning Network and Raiden Network.
+							+e.item(data-start="June 2018" data-end="August 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 6
+									+e.P.date June - August, 2018
+									+e.P.text Customer’s Mobile app with crypto wallet
+							+e.item(data-start="July 2018" data-end="December 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 7
+									+e.P.date July - December, 2018
+									+e.P.text Introduction of digital gift cards and scanning of loyalty cards into the mobile wallet. At this stage the geofencing and merchant search engine will be developed.
+							+e.item(data-start="September 2018" data-end="December 2018")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 8
+									+e.P.date September - December, 2018
+									+e.P.text Mobile SDK for merchant’s apps.
+							+e.item(data-start="January 2019" data-end="May 2019")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 9
+									+e.P.date January - May, 2019
+									+e.P.text Integration of data driven solutions incentivizing for different customer’s actions.
+							+e.item(data-start="May 2019" data-end="August 2019")
+								+e.wrapper
+									+e.line
+									+e.triagle
+									+e.stage Stage 10
+									+e.P.date May - August, 2019
+									+e.P.text Blockchain based traffic exchange between online and offline merchants.
 					+e.slide-nav
 						.icon-left
 						.icon-right

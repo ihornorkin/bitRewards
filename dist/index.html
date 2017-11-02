@@ -10,6 +10,12 @@
     <meta name="HandheldFriendly" content="True"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="address=no"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="theme-color" content="#ffffff"/>
     <title>BitRewards</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
@@ -31,19 +37,19 @@
             <div class="col-md-7 menu-wrapper">
               <div class="navigation__menu">
                 <ul class="navigation__nav-list">
-                  <li class="navigation__nav-item"><a href="#">How it work</a>
+                  <li class="navigation__nav-item"><a href="#how-work" class="scroll">How it work</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Great Value</a>
+                  <li class="navigation__nav-item"><a href="#value" class="scroll">Great Value</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Benefits</a>
+                  <li class="navigation__nav-item"><a href="#benefits" class="scroll">Benefits</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Tokens Offering</a>
+                  <li class="navigation__nav-item"><a href="#tokens-offering" class="scroll">Tokens Offering</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Team</a>
+                  <li class="navigation__nav-item"><a href="#team" class="scroll">Team</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Advisers</a>
+                  <li class="navigation__nav-item"><a href="#advisors" class="scroll">Advisers</a>
                   </li>
-                  <li class="navigation__nav-item"><a href="#">Roadmap</a>
+                  <li class="navigation__nav-item"><a href="#roadmap-section" class="scroll">Roadmap</a>
                   </li>
                   <li class="navigation__nav-item"><a href="#">Blog</a>
                   </li>
@@ -62,8 +68,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
-              <button class="button button-nav hidden-sm hidden-xs">WHITEPAPER<span></span></button>
+            <div class="col-md-2 hidden-xs hidden-sm">
+              <button class="button button-nav">WHITEPAPER<span></span></button>
             </div>
           </div>
         </div>
@@ -75,7 +81,7 @@
             <p class="header__description text-center">Shoppers are rewarded for purchases with cryptocurrency instead of loyalty points.
             </p>
             <button data-toggle="modal" data-target="#tuned" class="button header-button hidden-sm hidden-xs">Stay Tuned!<span></span></button>
-            <button class="button button-nav hidden-md hidden-lg">WHITEPAPER<span></span></button>
+            <button class="button button-nav hidden-md hidden-lg hidden-sm">WHITEPAPER<span></span></button>
             <ul class="social">
               <li class="social__social-item"><a href="#" target="_blank" class="icon-telegram"></a>
               </li>
@@ -103,7 +109,7 @@
               </h3>
               <p class="scheme__about">Customers are rewarded for their and their friends' purchases with BitRewards tokens, which are credited directly to their crypto-wallets.
               </p>
-              <button class="button"><img src="images/forma-1.svg" alt="play" /> Watch how to earn BRW<span></span></button>
+              <button data-toggle="modal" data-target="#video" class="button"><img src="images/forma-1.svg" alt="play" /> Watch how to earn BRW<span></span></button>
             </div>
             <div class="col-md-6 col-md-offset-1"><img src="images/animation-1.gif" alt="Animations" class="scheme__animation" title=""/>
             </div>
@@ -114,7 +120,7 @@
               </h3>
               <p class="scheme__about">Customers can redeem BRW tokens with all platform merchants or exchange BRW into other currency on a Crypto Exchange or via Liquidity Smart Contract.
               </p>
-              <button class="button"><img src="images/forma-1.svg" alt="play" /> Watch how to redeem BRW<span></span></button>
+              <button data-toggle="modal" data-target="#video" class="button"><img src="images/forma-1.svg" alt="play" /> Watch how to redeem BRW<span></span></button>
             </div>
             <div class="col-md-5"><img src="images/animation-2.gif" alt="Animations" class="scheme__animation" title=""/>
             </div>
@@ -122,7 +128,7 @@
         </div>
       </div>
     </section>
-    <section class="how-work rotate shadow"><img src="images/background-shapes.svg" alt="Shapes" class="how-work__image" title=""/>
+    <section id="how-work" class="how-work rotate shadow"><img src="images/background-shapes.svg" alt="Shapes" class="how-work__image" title=""/>
       <div class="corner-right"></div>
       <div class="container">
         <div class="row">
@@ -173,7 +179,7 @@
         </div>
       </div>
     </section>
-    <section class="value">
+    <section id="value" class="value">
       <div class="value__rect">
       </div>
       <div class="container">
@@ -221,7 +227,7 @@
         </div>
       </div>
     </section>
-    <section class="benefits shadow rotate-2">
+    <section id="benefits" class="benefits shadow rotate-2">
       <div class="benefits__rectangle">
       </div>
       <div class="container">
@@ -415,7 +421,7 @@
         </div>
       </div>
     </section>
-    <section class="pre-sale shadow rotate"><img src="images/background-shapes.svg" alt="Shapes" class="pre-sale__image" title=""/>
+    <section id="tokens-offering" class="pre-sale shadow rotate"><img src="images/background-shapes.svg" alt="Shapes" class="pre-sale__image" title=""/>
       <div class="cornet-left"></div>
       <div class="pre-sale__rectangle">
       </div>
@@ -458,7 +464,7 @@
         </div>
       </div>
     </section>
-    <section class="team rotate">
+    <section id="team" class="team rotate">
       <div class="team__reverse">
         <div class="leadership">
           <div class="rectangle"></div>
@@ -482,129 +488,149 @@
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">After over 5 years in FinTech, and 15 years in financial services, Alex founded GIFTD, an e-commerce loyalty and rewards solutions company in 2012. He has successfully launched and grown the company to create a state of the art suite of tools for online stores, which helped thousands of them to service their users better and become more competitive. Alex has an outstanding talent to organize complex processes and manage teams of sharp and bright people, who share his ideas and implement them in useful and beautiful IT products. Profound financial knowledge and IT experience helps Alex stay at the forefront of FinTech and deeply understand how the economy and financial ecosystem will bend towards the blockchain disruptive forces.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/alexanderegorovgiftd/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper nevidimov">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar nevidimov-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Alexander Nevidimov
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">CTO, Blockchain Architecture
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">Olympic Programming (5 years), winner of the ACM-ICPC/IOI championships, lead developer of the Bitcoin mining pool 50btc.com. He has been CTO of GIFTD for four years, and Alexander has more than 12-years experience in backend development (3 years full stack), leading diverse development teams for more than six years. Equipped with an innovation-focused mind, Alexander started testing distributed ledgers since 2015, and acts as a tech radar screen for the BitRewards Network, finding and applying various Blockchain services and solutions to its goals aiming and succeeding at using accomplished and approved by IT community technologies. As an Agile practitioner, Alexander is excellent at arranging technical development teams both at the startup and mature level. He is also studying Machine learning, and as an advanced Big Data expert, Alexander implemented machine learning algorithms into the GIFTD rewards and loyalty tools for e-commerce (recommendation 7 system, processing hundreds of thousands of items per day). He created from scratch proprietary data analysis system, which processes and reports on more than 200 million data points per month.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/alexander-nevidimov-78872a57/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper andrey-kladov">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar andrey-kladov-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Andrey Kladov
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">Mobile Architecture
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">The mobile mastermind behind dozens of B2B and B2C apps, Andrey boasts excellent mobile development skills using Cocoa, Cocoa-Touch, Objective-C, Swift-Language, Java and Android SDK. With over 8-year mobile development experience, he participated in several highly complex software products now enjoyed by millions of users globally. Inspired by the most technically sophisticated projects, Andrey always found himself at the forefront of the cutting edge technologies, starting to apply Swift coding language in production right after its presentation at WWDC14. Andrey presented Ultimate Guitar mobile app after they were selected among a small group of 24 projects to participate in Apple’s Earth Day’16 in Cupertino, California.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/andrey-kladov-b315603b/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper ma">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar ma-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Marat Arslanov
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">CMO
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">Before joining the team, Marat was CEO of a digital marketing agency, designing digital marketing campaigns for large and small companies. Marat is extremely passionate about data-driven marketing and behavioural analytics. These interests perfectly suit the goals of the rewards and loyalty SaaS tools, Marat leads the digital marketing for GIFTD. Being a strong believer in big data solutions and machine learning technologies, he is an organic match for the engineer's team, setting the concrete goals and aspiring to achieve measurable results. Marat is also exemplary at delivering uncompromising quality and precision in both internal tasks’ setting and solution and customers’ requirements, which is utterly conducive in setting strategic goals for product development.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/arslanovmarat/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper vm">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar vm-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Vitaliy Makarenko
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">COO
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">Vitaliy has vast experience in corporate processes management and sales, which he gained working on strategic industrial projects with Fortune500 companies.After more than seven years selling of software B2B products, Vitaliy honed his skills in market analysis and strategy, personnel management, customer development and customer success, which allowed him to accomplish several prominent projects in highly competitive IT solutions market for a total amount of more than $90 million.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper ca">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar ca-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Sergey Alisov
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">Head of Design
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">Sergey has an amazing ability to turn product concepts into a beautiful reality that resonate with end-users. An amazingly productive designer with over ten years in mobile and web UX and UI, he leads the design and features invention and implementation of apps that are used by more than 10 million users for the major players in airlines, communication, fashion and sports. Sergey headed the design and art for GIFTD and participated in the creation of numerous e-commerce solutions from scratch.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/segey-alisov-a3908a9b/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="leadership__persone">
-                    <div class="leadership__wrapper egorov">
+                    <div class="leadership__wrapper is">
                       <div class="leadership__main-info">
                         <div class="leadership__dots">
                         </div>
-                        <div class="leadership__avatar egorov-avatar">
+                        <div class="leadership__avatar is-avatar">
                         </div>
-                        <p class="leadership__name">Alexander Egorov
+                        <p class="leadership__name">Ilya Starovoitov
                         </p>
-                        <p class="leadership__position">CEO
+                        <p class="leadership__position">Business Development
                         </p>
                       </div>
                       <div class="leadership__description">
                         <div class="leadership__text-wrapper">
-                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="leadership__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develop relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
                           </p>
-                        </div><a href="#" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/ilya-starovoitov-5b504957/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="leadership__persone">
+                    <div class="leadership__wrapper ds">
+                      <div class="leadership__main-info">
+                        <div class="leadership__dots">
+                        </div>
+                        <div class="leadership__avatar ds-avatar">
+                        </div>
+                        <p class="leadership__name">Dmitry Semenov
+                        </p>
+                        <p class="leadership__position">QA engineer
+                        </p>
+                      </div>
+                      <div class="leadership__description">
+                        <div class="leadership__text-wrapper">
+                          <p class="leadership__about">More than 5 years in QA. Worked on more than 15 high-load mobile and web projects.
+                          </p>
+                        </div><a href="https://www.linkedin.com/in/dmitrii-semenov-a6754aa9/" target="_blank" class="leadership__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
@@ -631,119 +657,119 @@
                       <h3 class="other-member__name">Svyatoslav Zytsar
                       </h3>
                       <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      </p><a href="https://www.linkedin.com/in/zytsar-svyatoslav-187660a9/" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar litkevich">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar litkevich-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Maxim Litkevich
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Technical support engineer
+                      </p><a href="https://www.linkedin.com/in/maksim-litkevich-131227151/" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar kulitskiy">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar kulitskiy-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Sergey Kulitskiy
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Backend developer
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar kurkin">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar kurkin-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Vasily Kurkin
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Fullstack engineer
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar gizi">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar gizi-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Nail Gazizyanov
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Chat-bot, machine learning engineer
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar edinin">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar edinin-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Sergey Edinin
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Backend developer
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar roman-mukh">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar roman-mukh-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Roman Mukhutdinov
                       </h3>
                       <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar evgeniy-ahmetg">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar evgeniy-ahmetg-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Evgheniy Ahmetgareev
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Network security engineer
+                      </p>
                     </div>
                   </li>
                   <li class="other-member__item">
                     <div class="other-member__avatar-wrapper">
-                      <div class="other-member__avatar zytsar">
+                      <div class="other-member__avatar ramil-zayneev">
                       </div>
-                      <div class="other-member__active-avatar zytsar-active">
+                      <div class="other-member__active-avatar ramil-zayneev-active">
                       </div>
                     </div>
                     <div class="other-member__about">
-                      <h3 class="other-member__name">Svyatoslav Zytsar
+                      <h3 class="other-member__name">Ramil Zayneev
                       </h3>
-                      <p class="other-member__position">Frontend engineer
-                      </p><a href="#" tragte="_blank" class="other-member__social icon-linkedin-simple"></a>
+                      <p class="other-member__position">Fullstack engineer
+                      </p>
                     </div>
                   </li>
                 </ul>
@@ -751,7 +777,7 @@
             </div>
           </div>
         </div>
-        <div class="advisors shadow">
+        <div id="advisors" class="advisors shadow">
           <div class="rectangle"></div>
           <div class="container">
             <div class="row">
@@ -762,62 +788,62 @@
               <div class="col-md-10 col-md-offset-1">
                 <ul id="advisors" class="advisors__container">
                   <li class="advisors__persone">
-                    <div class="advisors__wrapper egorov">
+                    <div class="advisors__wrapper jm">
                       <div class="advisors__main-info">
                         <div class="advisors__dots">
                         </div>
-                        <div class="advisors__avatar egorov-avatar">
+                        <div class="advisors__avatar jm-avatar">
                         </div>
-                        <p class="advisors__name">Alexander Egorov
+                        <p class="advisors__name">John McNaughton
                         </p>
                         <p class="advisors__position">Payments processing and finance advisor
                         </p>
                       </div>
                       <div class="advisors__description">
                         <div class="advisors__text-wrapper">
-                          <p class="advisors__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="advisors__about">A well known global international banker with more than 25 years of experience in international finance and payment systems. C-level executive for a number of financial institutions in Great Britain.
                           </p>
-                        </div><a href="#" target="_blank" class="advisors__social icon-linkedin-simple"></a>
+                        </div>
                       </div>
                     </div>
                   </li>
                   <li class="advisors__persone">
-                    <div class="advisors__wrapper egorov">
+                    <div class="advisors__wrapper ag">
                       <div class="advisors__main-info">
                         <div class="advisors__dots">
                         </div>
-                        <div class="advisors__avatar egorov-avatar">
+                        <div class="advisors__avatar ag-avatar">
                         </div>
-                        <p class="advisors__name">Alexander Egorov
+                        <p class="advisors__name">Alexey Gritsyna
                         </p>
-                        <p class="advisors__position">CEO
+                        <p class="advisors__position">Business Development, E-commerce
                         </p>
                       </div>
                       <div class="advisors__description">
                         <div class="advisors__text-wrapper">
-                          <p class="advisors__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="advisors__about">Alexey is an entrepreneur and investor that operates out of the United States. With a degree in Economics and extensive experience in the US medium size business sales, production, and marketing, he not only brings deep knowledge of the US e-commerce niche, but also great passion and enthusiasm for the cutting edge technologies in that space and beyond.
                           </p>
-                        </div><a href="#" target="_blank" class="advisors__social icon-linkedin-simple"></a>
+                        </div><a href="https://www.linkedin.com/in/alexeygritsyna/" target="_blank" class="advisors__social icon-linkedin-simple"></a>
                       </div>
                     </div>
                   </li>
                   <li class="advisors__persone">
-                    <div class="advisors__wrapper egorov">
+                    <div class="advisors__wrapper ia">
                       <div class="advisors__main-info">
                         <div class="advisors__dots">
                         </div>
-                        <div class="advisors__avatar egorov-avatar">
+                        <div class="advisors__avatar ia-avatar">
                         </div>
-                        <p class="advisors__name">Alexander Egorov
+                        <p class="advisors__name">Ivan Anichkov
                         </p>
-                        <p class="advisors__position">CEO
+                        <p class="advisors__position">Enterprise solutions, Data Expert
                         </p>
                       </div>
                       <div class="advisors__description">
                         <div class="advisors__text-wrapper">
-                          <p class="advisors__about">Ilya is a charismatic Sales team leader with broad international experience in both software and hardware niches who develops relationships with partners and key accounts (Leroy Merlin, Kenwood, GoPro, Ikea, Hoff and more than 300 SMB clients). Having acquired acute understanding how to shape value proposition and make money for customers during over 12 years in sales, Ilya invents winning scenarios and trains sales team members to increase the efficiency of the product implementation processes and customer success. Highly skilled with CRM systems and showing excellent competence in human resource management and team-building, Ilya drives the team to accomplish the most ambitious business goals.
+                          <p class="advisors__about">Expertise driven, strategic business development and management professional with over 10 years experience in new business and technology ventures, complex projects in a variety of industries and application domains.
                           </p>
-                        </div><a href="#" target="_blank" class="advisors__social icon-linkedin-simple"></a>
+                        </div>
                       </div>
                     </div>
                   </li>
@@ -828,7 +854,7 @@
         </div>
       </div>
     </section>
-    <section class="roadmap"><img src="images/background-shapes-dark.svg" alt="Shapes" class="roadmap__image-top" title=""/><img src="images/background-shapes.svg" alt="Shapes" class="roadmap__image-bottom" title=""/>
+    <section id="roadmap-section" class="roadmap"><img src="images/background-shapes-dark.svg" alt="Shapes" class="roadmap__image-top" title=""/><img src="images/background-shapes.svg" alt="Shapes" class="roadmap__image-bottom" title=""/>
       <div class="cornet-left"></div>
       <div class="container">
         <div class="row">
@@ -838,7 +864,7 @@
           <div class="col-md-12">
             <div class="roadmap__slider-wrapper">
               <div id="roadmap" class="road-map-slider">
-                <div data-start="january 2017" data-end="February 2017" class="road-map-slider__item">
+                <div data-start="November 2016" data-end="February 2017" class="road-map-slider__item">
                   <div class="road-map-slider__wrapper">
                     <div class="road-map-slider__line">
                     </div>
@@ -846,7 +872,7 @@
                     </div>
                     <div class="road-map-slider__stage">Stage 1
                     </div>
-                    <p class="road-map-slider__date">january - February, 2017
+                    <p class="road-map-slider__date">November - February, 2017
                     </p>
                     <p class="road-map-slider__text">Development of points based loyalty system GIFTD designed to reward shoppers.
                     </p>
@@ -860,7 +886,7 @@
                     </div>
                     <div class="road-map-slider__stage">Stage 2
                     </div>
-                    <p class="road-map-slider__date">February - December, 2017
+                    <p class="road-map-slider__date">February - August, 2017
                     </p>
                     <p class="road-map-slider__text">Structuring the concept of using Ethereum blockchain with loyalty and rewards tools and customer development of the crypto-rewards for e-commerce industry, team hiring.
                     </p>
@@ -888,7 +914,7 @@
                     </div>
                     <div class="road-map-slider__stage">Stage 4
                     </div>
-                    <p class="road-map-slider__date">November - February, 2018
+                    <p class="road-map-slider__date">March - June, 2018
                     </p>
                     <p class="road-map-slider__text">Merchant’s cryptowallet and Liquidity Smart Contract.
                     </p>
@@ -905,6 +931,76 @@
                     <p class="road-map-slider__date">June - July, 2018
                     </p>
                     <p class="road-map-slider__text">Integration of Bitrewards.Network with Lightning Network and Raiden Network.
+                    </p>
+                  </div>
+                </div>
+                <div data-start="June 2018" data-end="August 2018" class="road-map-slider__item">
+                  <div class="road-map-slider__wrapper">
+                    <div class="road-map-slider__line">
+                    </div>
+                    <div class="road-map-slider__triagle">
+                    </div>
+                    <div class="road-map-slider__stage">Stage 6
+                    </div>
+                    <p class="road-map-slider__date">June - August, 2018
+                    </p>
+                    <p class="road-map-slider__text">Customer’s Mobile app with crypto wallet
+                    </p>
+                  </div>
+                </div>
+                <div data-start="July 2018" data-end="December 2018" class="road-map-slider__item">
+                  <div class="road-map-slider__wrapper">
+                    <div class="road-map-slider__line">
+                    </div>
+                    <div class="road-map-slider__triagle">
+                    </div>
+                    <div class="road-map-slider__stage">Stage 7
+                    </div>
+                    <p class="road-map-slider__date">July - December, 2018
+                    </p>
+                    <p class="road-map-slider__text">Introduction of digital gift cards and scanning of loyalty cards into the mobile wallet. At this stage the geofencing and merchant search engine will be developed.
+                    </p>
+                  </div>
+                </div>
+                <div data-start="September 2018" data-end="December 2018" class="road-map-slider__item">
+                  <div class="road-map-slider__wrapper">
+                    <div class="road-map-slider__line">
+                    </div>
+                    <div class="road-map-slider__triagle">
+                    </div>
+                    <div class="road-map-slider__stage">Stage 8
+                    </div>
+                    <p class="road-map-slider__date">September - December, 2018
+                    </p>
+                    <p class="road-map-slider__text">Mobile SDK for merchant’s apps.
+                    </p>
+                  </div>
+                </div>
+                <div data-start="January 2019" data-end="May 2019" class="road-map-slider__item">
+                  <div class="road-map-slider__wrapper">
+                    <div class="road-map-slider__line">
+                    </div>
+                    <div class="road-map-slider__triagle">
+                    </div>
+                    <div class="road-map-slider__stage">Stage 9
+                    </div>
+                    <p class="road-map-slider__date">January - May, 2019
+                    </p>
+                    <p class="road-map-slider__text">Integration of data driven solutions incentivizing for different customer’s actions.
+                    </p>
+                  </div>
+                </div>
+                <div data-start="May 2019" data-end="August 2019" class="road-map-slider__item">
+                  <div class="road-map-slider__wrapper">
+                    <div class="road-map-slider__line">
+                    </div>
+                    <div class="road-map-slider__triagle">
+                    </div>
+                    <div class="road-map-slider__stage">Stage 10
+                    </div>
+                    <p class="road-map-slider__date">May - August, 2019
+                    </p>
+                    <p class="road-map-slider__text">Blockchain based traffic exchange between online and offline merchants.
                     </p>
                   </div>
                 </div>
@@ -974,6 +1070,18 @@
               <input type="email" placeholder="Your E-mail"/>
               <button type="submit" class="button">Stay Tuned!<span></span></button>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="video" tabindex="-1" role="dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" data-dismiss="modal" class="close icon-cancel"></button>
+          <div class="modal-body">
+            <div class="modal-video">
+              <iframe src="https://www.youtube.com/embed/4oh7lct04Us"></iframe>
+            </div>
           </div>
         </div>
       </div>
