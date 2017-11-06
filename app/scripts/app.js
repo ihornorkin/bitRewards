@@ -31,6 +31,10 @@ const mainModule = (function () {
 		self.otherMember = $('#other-member');
 		self.navigationLanguage = $('.navigation__language-active');
 		self.navigationItem = $('.navigation__nav-item');
+		self.buttonModal = $('[data-toggle = modal]');
+		self.videoModal = $('#video iframe');
+		self.modalWindow = $('.modal');
+		self.platformIcon = $('.platform__item');
 
 		/* self.elementName = $(); */
 		return self;
@@ -292,6 +296,28 @@ const mainModule = (function () {
 		});
 	};
 
+	const video = function () {
+		$(elements.buttonModal).on('click', function () {
+			var videoUrl = $(this).attr('data-video');
+			$(elements.videoModal).attr('src', videoUrl);
+		});
+		$(elements.modalWindow).on('hidden.bs.modal', function (event) {
+			$(elements.videoModal).attr('src', '');
+		})
+	};
+
+	const svgHover = function () {
+		elements.platformIcon.on('mouseenter', function () {
+			$(this).find('svg').find('path').each(function (index, element) {
+					var color = $(element).attr('fill');
+					$(element).css('fill', color);
+			});
+		});
+		elements.platformIcon.on('mouseleave', function () {
+			$(this).find('svg').find('path').css('fill', '');
+		});
+	};
+
 	/* Declarate function in array */
 	const init = function () {
 		elements = cacheDOM();
@@ -308,6 +334,8 @@ const mainModule = (function () {
 		smoothScroll();
 		langButton();
 		wayPoint();
+		video();
+		svgHover();
 		/* exampleFunction(); */
 	};
 

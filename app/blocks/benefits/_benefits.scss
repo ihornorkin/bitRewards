@@ -13,6 +13,10 @@
 		left: 0;
 		top: -7rem;
 		background-color: $dark-indigo-two;
+		@media (max-width: $tablet) {
+			height: 9rem;
+			top: -8rem;
+		}
 	}
 	&__icon {
 		font-size: 9.5rem;
@@ -164,6 +168,11 @@
 			.platform__title {
 				color: $pastel-orange;
 			}
+			.platform__image {
+				svg {
+					opacity: 1;
+				}
+			}
 			.platform__active {
 				opacity: 1;
 			}
@@ -176,26 +185,47 @@
 		height: 5.6rem;
 		margin-bottom: 0.6rem;
 		position: relative;
+		svg {
+			height: 100%;
+			width: 5.6rem;
+			opacity: 0.5;
+			margin: 0 auto;
+			display: block;
+			transition: opacity 0.4s;
+			path {
+				fill: $cloudy-blue;
+				transition: fill 0.4s;
+			}
+			.svg-nochange {
+				fill: $white;
+			}
+			.svg-true-color {
+				fill: $dark-indigo-two;
+			}
+			.svg-alernative {
+				fill: $svg-second-color;
+			}
+		}
 	}
-	&__active {
-		opacity: 0;
-		margin: auto;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		transition: opacity 0.4s;
-	}
-	&__no-active {
-		margin: auto;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		transition: opacity 0.4s;
-	}
+		&__active {
+          opacity: 0;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: opacity 0.4s;
+      }
+      &__no-active {
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: opacity 0.4s;
+      }
 	&__title {
 		text-align: center;
 		color: $cloudy-blue-50;
