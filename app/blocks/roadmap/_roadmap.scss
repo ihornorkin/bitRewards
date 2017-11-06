@@ -85,6 +85,10 @@
 	&__line--last {
 		background-image: linear-gradient(to right, $twilight, $twilight-0);
 		width: calc(100% + 1.5rem);
+		@media (max-width: $tablet) {
+			background-image: none;
+			width: calc(100% + 3rem);
+		}
 	}
 	&__triagle {
 		width: 0;

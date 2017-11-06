@@ -14,6 +14,24 @@ const mainModule = (function () {
 	const cacheDOM = function () {
 		const self = {};
 
+		self.navigation = $('.navigation');
+		self.language = $('.navigation__language');
+		self.button = $('.button');
+		self.roadMapSlider = $('#roadmap');
+		self.roadMapLeft = $('.roadmap__slide-nav .icon-left');
+		self.roadMapRight = $('.roadmap__slide-nav .icon-right');
+		self.lineSlider = $('.slick-active .road-map-slider__line');
+		self.roadMapSliderItem = $('#roadmap .road-map-slider__item');
+		self.roadMapSliderStage = $('.road-map-slider__stage');
+		self.leadershipAdvisor = $('.leadership__text-wrapper, .advisors__text-wrapper');
+		self.burger = $('.burger-click-region');
+		self.navigationList = $('.navigation__nav-list');
+		self.advisor = $('#advisors-slider');
+		self.leadership = $('#leadership');
+		self.otherMember = $('#other-member');
+		self.navigationLanguage = $('.navigation__language-active');
+		self.navigationItem = $('.navigation__nav-item');
+
 		/* self.elementName = $(); */
 		return self;
 	};
@@ -31,21 +49,21 @@ const mainModule = (function () {
 	const stickyMenu = function () {
 		$(window).bind('scroll', function () {
 			if ($(window).scrollTop() > 50) {
-				$('.navigation').addClass('fixed');
+				$(elements.navigation).addClass('fixed');
 			} else {
-				$('.navigation').removeClass('fixed');
+				$(elements.navigation).removeClass('fixed');
 			}
 		});
 	};
 
 	const lang = function () {
-		$('.navigation__language').on('click', function () {
+		$(elements.language).on('click', function () {
 			$(this).find('ul').toggleClass('navigation__language-list--open');
 		});
 	};
 
 	const button = function () {
-		$('.button').on('mouseenter', function (e) {
+		$(elements.button).on('mouseenter', function (e) {
 			var parentOffset = $(this).offset(),
 				relX = e.pageX - parentOffset.left,
 				relY = e.pageY - parentOffset.top;
@@ -60,12 +78,12 @@ const mainModule = (function () {
 	};
 
 	const roadMap = function () {
-		$('#roadmap').slick({
+		$(elements.roadMapSlider).slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
 			infinite: false,
-			prevArrow: $('.roadmap__slide-nav .icon-left'),
-			nextArrow: $('.roadmap__slide-nav .icon-right'),
+			prevArrow: $(elements.roadMapLeft),
+			nextArrow: $(elements.roadMapRight),
 			responsive: [
 				{
 					breakpoint: 769,
@@ -83,11 +101,11 @@ const mainModule = (function () {
 				}
 			]
 		});
-		$('#roadmap').on('beforeChange', function (event, slick, direction) {
-			$('.slick-active .road-map-slider__line').removeClass('road-map-slider__line--last');
+		$(elements.roadMapSlider).on('beforeChange', function (event, slick, direction) {
+			$(elements.lineSlider).removeClass('road-map-slider__line--last');
 		});
-		$('#roadmap').on('afterChange', function (event, slick, direction) {
-			$('.slick-active:eq(3) .road-map-slider__line').addClass('road-map-slider__line--last');
+		$(elements.roadMapSlider).on('afterChange', function (event, slick, direction) {
+			$(elements.lineSlider).addClass('road-map-slider__line--last');
 		});
 	};
 
@@ -106,7 +124,7 @@ const mainModule = (function () {
 			'november': 10,
 			'december': 11
 		};
-		$('#roadmap .road-map-slider__item').each(function (slide, index) {
+		$(elements.roadMapSliderItem).each(function (slide, index) {
 			var startData = $(this).data('start').split(' ');
 			var startMonth = startData[0].toLowerCase();
 			startMonth = month[startMonth];
@@ -127,17 +145,17 @@ const mainModule = (function () {
 				$(this).addClass('road-map-slider__item--present');
 			}
 			if ($(this).hasClass('road-map-slider__item--present')) {
-				$(this).find('.road-map-slider__stage').append('<span class="road-map-slider__status"> - Completed</span>')
+				$(this).find(elements.roadMapSliderStage).append('<span class="road-map-slider__status"> - Completed</span>')
 			}
 		});
 	};
 
 	const scroll = function () {
-		$('.leadership__text-wrapper, .advisors__text-wrapper').jScrollPane({
+		$(elements.leadershipAdvisor).jScrollPane({
 			autoReinitialise: true
 		});
 		$(window).resize(function () {
-			$('.leadership__text-wrapper, .advisors__text-wrapper').jScrollPane({
+			$(elements.leadershipAdvisor).jScrollPane({
 				autoReinitialise: true
 			});
 		});
@@ -147,7 +165,7 @@ const mainModule = (function () {
 		var clickDelay = 500,
 			clickDelayTimer = null;
 
-		$('.burger-click-region').on('click', function () {
+		$(elements.burger).on('click', function () {
 
 			if (clickDelayTimer === null) {
 
@@ -165,11 +183,11 @@ const mainModule = (function () {
 					clickDelayTimer = null;
 				}, clickDelay);
 			}
-			if ($('.burger-click-region').hasClass('active')) {
-				$('.navigation__nav-list').addClass('navigation__nav-list--open');
+			if ($(elements.burger).hasClass('active')) {
+				$(elements.navigationList).addClass('navigation__nav-list--open');
 				$('body').addClass('menu-open');
 			} else {
-				$('.navigation__nav-list').removeClass('navigation__nav-list--open');
+				$(elements.navigationList).removeClass('navigation__nav-list--open');
 				$('body').removeClass('menu-open');
 			}
 		});
@@ -177,7 +195,7 @@ const mainModule = (function () {
 
 	const leadershipSlider = function () {
 		function slickify() {
-			$('#leadership').not('.slick-initialized').slick({
+			$(self.leadership).not('.slick-initialized').slick({
 				dots: true,
 				slidesToShow: 1.6,
 				slidesToScroll: 1,
@@ -198,7 +216,7 @@ const mainModule = (function () {
 
 	const othermemberSlider = function () {
 		function slickify() {
-			$('#other-member').not('.slick-initialized').slick({
+			$(elements.otherMember).not('.slick-initialized').slick({
 				dots: true,
 				slidesToShow: 3,
 				slidesToScroll: 3,
@@ -228,7 +246,7 @@ const mainModule = (function () {
 
 	const advisorsSlider = function () {
 		function slickify() {
-			$('#advisors').not('.slick-initialized').slick({
+			$(elements.advisor).not('.slick-initialized').slick({
 				dots: true,
 				slidesToShow: 1.6,
 				slidesToScroll: 1,
@@ -258,16 +276,16 @@ const mainModule = (function () {
 	};
 
 	const langButton = function () {
-		$('.navigation__language-active').on('click', function() {
+		$(elements.navigationLanguage).on('click', function () {
 			$(this).toggleClass('navigation__language-active--click');
 		});
 	};
 
 	const wayPoint = function () {
 		$('section').waypoint({
-			handler: function (direction) {
-				var link =  '[href="#' + $(this.element).attr('id') + '"]';
-				$('.navigation__nav-item').removeClass('navigation__nav-item--active');
+			handler: function () {
+				var link = '[href="#' + $(this.element).attr('id') + '"]';
+				$(elements.navigationItem).removeClass('navigation__nav-item--active');
 				$(link).parent().addClass('navigation__nav-item--active');
 			}
 			//offset: '20%'
