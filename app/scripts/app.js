@@ -155,13 +155,9 @@ const mainModule = (function () {
 	};
 
 	const scroll = function () {
-		$(elements.leadershipAdvisor).jScrollPane({
-			autoReinitialise: true
-		});
+		$(elements.leadershipAdvisor).jScrollPane();
 		$(window).resize(function () {
-			$(elements.leadershipAdvisor).jScrollPane({
-				autoReinitialise: true
-			});
+			$(elements.leadershipAdvisor).jScrollPane();
 		});
 	};
 
@@ -204,13 +200,30 @@ const mainModule = (function () {
 				slidesToShow: 1.6,
 				slidesToScroll: 1,
 				infinite: false,
-				arrows: false
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							dots: true,
+							slidesToShow: 1.6,
+							slidesToScroll: 1,
+							infinite: false,
+							arrows: false,
+						}
+					}
+				]
 			});
 		}
 
 		if ($(window).width() <= 768) {
 			slickify();
 		}
+
 		$(window).resize(function () {
 			if ($(window).width() <= 768) {
 				slickify();
@@ -227,6 +240,20 @@ const mainModule = (function () {
 				infinite: false,
 				arrows: false,
 				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							dots: true,
+							slidesToShow: 3,
+							slidesToScroll: 3,
+							infinite: false,
+							arrows: false,
+						}
+					},
 					{
 						breakpoint: 450,
 						settings: {
@@ -255,7 +282,23 @@ const mainModule = (function () {
 				slidesToShow: 1.6,
 				slidesToScroll: 1,
 				infinite: false,
-				arrows: false
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							dots: true,
+							slidesToShow: 1.6,
+							slidesToScroll: 1,
+							infinite: false,
+							arrows: false,
+						}
+					}
+				]
 			});
 		}
 
@@ -292,7 +335,6 @@ const mainModule = (function () {
 				$(elements.navigationItem).removeClass('navigation__nav-item--active');
 				$(link).parent().addClass('navigation__nav-item--active');
 			}
-			//offset: '20%'
 		});
 	};
 
@@ -309,8 +351,8 @@ const mainModule = (function () {
 	const svgHover = function () {
 		elements.platformIcon.on('mouseenter', function () {
 			$(this).find('svg').find('path').each(function (index, element) {
-					var color = $(element).attr('fill');
-					$(element).css('fill', color);
+				var color = $(element).attr('fill');
+				$(element).css('fill', color);
 			});
 		});
 		elements.platformIcon.on('mouseleave', function () {
