@@ -61,11 +61,16 @@ button.close {
 			border-color: $pastel-orange;
 		}
 	}
-	.button {
-		display: block;
-		margin: 4.5rem auto 0 auto;
-		padding-right: 7rem;
-		padding-left: 7rem;
+}
+
+.modal {
+	.modal-form {
+		.button {
+			display: block;
+			margin: 4.5rem auto 0 auto;
+			padding-right: 7rem;
+			padding-left: 7rem;
+		}
 	}
 }
 
