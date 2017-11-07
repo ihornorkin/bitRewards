@@ -106,10 +106,10 @@ const mainModule = (function () {
 			]
 		});
 		$(elements.roadMapSlider).on('beforeChange', function (event, slick, direction) {
-			$(elements.lineSlider).removeClass('road-map-slider__line--last');
+			$('.slick-active .road-map-slider__line').removeClass('road-map-slider__line--last');
 		});
 		$(elements.roadMapSlider).on('afterChange', function (event, slick, direction) {
-			$(elements.lineSlider).addClass('road-map-slider__line--last');
+			$('.slick-active .road-map-slider__line:eq(3)').addClass('road-map-slider__line--last');
 		});
 	};
 
