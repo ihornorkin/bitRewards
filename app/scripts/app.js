@@ -361,7 +361,8 @@ const mainModule = (function () {
 	};
 
 	const formSubscribe = function() {
-		ajaxMailChimpForm($(".form"), $(".subscribe-result"));
+		ajaxMailChimpForm($("#modal-form"), $(".modal-subscribe-result"));
+		ajaxMailChimpForm($("#subscribe-form"), $(".window-subscribe-result"));
 		// Turn the given MailChimp form into an ajax version of it.
 		// If resultElement is given, the subscribe result is set as html to
 		// that element.
@@ -409,7 +410,7 @@ const mainModule = (function () {
 					// According to jquery docs, this is never called for cross-domain JSONP requests
 				},
 				success: function(data){
-					$form.find("input").val('');
+					$resultElement.attr('style', '');
 					if (data.result != "success") {
 						var message = data.msg || "Sorry. Unable to subscribe. Please try again later.";
 						$resultElement.css("color", "red");
@@ -423,6 +424,7 @@ const mainModule = (function () {
 					setTimeout(function(){
 						$resultElement.html('');
 					}, 4000);
+					$form.find("input").val('');
 				}
 			});
 		}

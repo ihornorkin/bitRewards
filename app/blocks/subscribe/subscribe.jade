@@ -3,10 +3,10 @@ mixin subscribe()
 		+b.subscribe
 			h2.text-center Participate in PRE-SALE
 				strong .
-			+b.FORM.form(action="https://ptoken.us16.list-manage.com/subscribe/post-json?u=1a7d927f4a202d0e498d9d6f0&id=ad1ff116c6" method="get")
+			+b.FORM.form(id="subscribe-form" action="https://ptoken.us16.list-manage.com/subscribe/post-json?u=1a7d927f4a202d0e498d9d6f0&id=ad1ff116c6" method="get")
 				+e.P.desk We offer exceptional pre-sale program for the interested token buyers.
 				+e.field-wrapper
 					+e.INPUT.field(type="email" placeholder="Your E-mail" value="" name="EMAIL")
 					button.button(type="submit") Join PRE-SALE
 						span
-				.subscribe-result
+				.subscribe-result.window-subscribe-result

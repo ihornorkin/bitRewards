@@ -5,11 +5,11 @@ mixin modal()
 				button.close.icon-cancel(type="button" data-dismiss="modal")
 				.modal-body
 					.modal-title Subscribe to the project updates
-					form.modal-form.form(action="https://ptoken.us16.list-manage.com/subscribe/post-json?u=1a7d927f4a202d0e498d9d6f0&id=ad1ff116c6" method="get")
+					form.modal-form(id="modal-form" action="https://ptoken.us16.list-manage.com/subscribe/post-json?u=1a7d927f4a202d0e498d9d6f0&id=ad1ff116c6" method="get")
 						input(type="email" placeholder="Your E-mail" value="" name="EMAIL")
 						button.button(type="submit") Stay Tuned!
 							span
-						.subscribe-result
+						.subscribe-result.modal-subscribe-result
 	.modal.fade(id="video" tabindex="-1" role="dialog")
 		.modal-dialog
 			.modal-content
